@@ -1,0 +1,879 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TEAM SEPC leadership-focused department website"><title>TEAM SEPC | Lead. Inspire. Empower.</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span>TEAM</span><strong>SEPC</strong></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Primary navigation"><a href="index.html" class="active">Home</a><a href="leadership.html" >Leadership</a><a href="team.html" >Our Team</a><a href="projects.html" >Projects & Impact</a><a href="gallery.html" >Gallery</a><div class="nav-dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Shortcuts <span>⌄</span></button><div class="dropdown-menu"><a href="#" onclick="return false;"><span>01</span> SEPC Portal <small>Coming soon</small></a><a href="#" onclick="return false;"><span>02</span> Daily Dashboard <small>Coming soon</small></a><a href="#" onclick="return false;"><span>03</span> Improvement Tracker <small>Coming soon</small></a><a href="#" onclick="return false;"><span>04</span> Training Hub <small>Coming soon</small></a><a href="#" onclick="return false;"><span>05</span> Shared Resources <small>Coming soon</small></a></div></div></nav></div></header>
+<main><section class="hero"><div class="container hero-grid"><div class="hero-copy reveal"><div class="hero-kicker">LEADERSHIP • PEOPLE • CONTINUOUS IMPROVEMENT</div><h1>Lead. Inspire.<br><span>Empower.</span></h1><p>TEAM SEPC believes leadership is not only a position. It is how we develop people, create ownership, improve the way we work, and build excellence that lasts.</p><div class="hero-actions"><a class="btn btn-primary" href="leadership.html">Our Leadership Philosophy →</a><a class="btn btn-ghost" href="team.html">Meet the Team</a></div></div><div class="leadership-visual reveal delay-1"><div class="core"><div><span>TEAM SEPC</span><strong>LEADERSHIP</strong><small>BUILD PEOPLE • DRIVE IMPACT</small></div></div><div class="orbit-label ol1">LEAD BY EXAMPLE</div><div class="orbit-label ol2">DEVELOP PEOPLE</div><div class="orbit-label ol3">EMPOWER OWNERSHIP</div><div class="orbit-label ol4">DRIVE IMPROVEMENT</div></div></div></section><section class="department-film section-dark"><div class="container"><div class="section-heading center reveal"><div class="eyebrow">MEET THE TEAM</div><h2>SEPC TEAM IN <span>MOTION.</span></h2><p>A glimpse into our team that turns leadership into action.</p></div><div class="film-frame reveal"><video id="departmentVideo" autoplay muted playsinline loop preload="metadata" poster="images/department-video-poster.jpg"><source src="videos/sepc-department.mov" type="video/mp4">Your browser does not support HTML5 video.</video><div class="film-overlay"><div class="film-badge"><span></span> TEAM SEPC • DEPARTMENT FILM</div><button class="sound-toggle" id="soundToggle" type="button">🔇 <span>Enable Sound</span></button></div></div><p class="film-note reveal">Video starts automatically without sound. Tap <strong>Enable Sound</strong> to hear the audio.</p></div></section>
+<section class="office-explorer" id="office-explorer">
+  <style>
+    .office-explorer{position:relative;overflow:hidden;padding:96px 0 110px;background:radial-gradient(circle at 50% 30%,rgba(28,91,139,.18),transparent 38%),#050b14;border-top:1px solid rgba(75,165,255,.16);border-bottom:1px solid rgba(75,165,255,.16)}
+    .office-explorer .oe-head{max-width:880px;margin:0 auto 34px;text-align:center;padding:0 24px}
+    .office-explorer .oe-kicker{font:800 12px/1.2 Arial,sans-serif;letter-spacing:.22em;color:#2fd3ff;margin-bottom:16px}
+    .office-explorer h2{margin:0;color:#f6f8fc;font:800 clamp(38px,5vw,66px)/.98 Arial,sans-serif;letter-spacing:-.04em}
+    .office-explorer h2 span{background:linear-gradient(90deg,#2dd4ff,#5f7cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .office-explorer .oe-sub{max-width:700px;margin:18px auto 0;color:#8fb9e8;font:400 16px/1.7 Arial,sans-serif}
+    .oe-shell{width:min(1280px,94vw);margin:0 auto;border:1px solid rgba(73,164,255,.26);border-radius:28px;background:linear-gradient(180deg,rgba(10,31,56,.88),rgba(6,15,28,.95));box-shadow:0 35px 90px rgba(0,0,0,.42);overflow:hidden}
+    .oe-toolbar{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid rgba(73,164,255,.15);color:#78a7d6;font:600 12px Arial,sans-serif;letter-spacing:.08em}
+    .oe-toolbar strong{color:#dff6ff}.oe-dots{display:flex;gap:7px}.oe-dots i{width:8px;height:8px;border-radius:50%;background:#16395d;border:1px solid #24547d}
+    .oe-stage{position:relative;padding:28px;background:linear-gradient(180deg,rgba(5,13,23,.28),rgba(4,10,18,.7));overflow:hidden}
+    .oe-stage:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(58,156,226,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(58,156,226,.045) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 84%,transparent 100%);pointer-events:none}
+    .layout-wrap{position:relative;z-index:1;max-width:1160px;margin:0 auto;border-radius:20px;padding:16px;background:linear-gradient(180deg,rgba(10,24,42,.92),rgba(6,14,25,.96));border:1px solid rgba(69,172,236,.22);box-shadow:inset 0 0 60px rgba(31,140,210,.05),0 22px 55px rgba(0,0,0,.28)}
+    .layout-wrap img{display:block;width:100%;height:auto;border-radius:12px;object-fit:contain;filter:drop-shadow(0 18px 28px rgba(0,0,0,.25))}
+    .layout-wrap:after{content:"SEPC OFFICE LAYOUT";position:absolute;left:30px;bottom:28px;padding:8px 11px;border-radius:8px;border:1px solid rgba(47,211,255,.22);background:rgba(3,14,26,.72);color:#aeefff;font:800 10px Arial,sans-serif;letter-spacing:.14em;backdrop-filter:blur(8px)}
+    .oe-caption{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:22px;border-top:1px solid rgba(73,164,255,.15)}
+    .oe-caption h3{margin:0 0 6px;color:#f4f8fd;font:800 20px Arial,sans-serif}.oe-caption p{margin:0;color:#7ca9d3;font:400 14px/1.5 Arial,sans-serif}.oe-caption span{color:#2fd3ff;font:800 11px Arial,sans-serif;letter-spacing:.12em}
+    .desk-hotspot{position:absolute;z-index:8;width:28px;height:28px;border-radius:50%;border:2px solid rgba(217,250,255,.95);background:linear-gradient(135deg,#2fd3ff,#557bff);box-shadow:0 0 0 6px rgba(47,211,255,.12),0 0 22px rgba(47,211,255,.75);transform:translate(-50%,-50%);cursor:pointer;color:#02111e;font:900 11px/1 Arial,sans-serif;display:grid;place-items:center;transition:transform .18s ease,box-shadow .18s ease;animation:deskPulse 2.2s ease-in-out infinite}
+    .desk-hotspot:hover,.desk-hotspot:focus-visible,.desk-hotspot.is-active{transform:translate(-50%,-50%) scale(1.18);box-shadow:0 0 0 10px rgba(47,211,255,.08),0 0 28px rgba(47,211,255,.9);outline:none}
+    @keyframes deskPulse{50%{box-shadow:0 0 0 10px rgba(47,211,255,0),0 0 24px rgba(47,211,255,.72)}}
+    .staff-popover{position:absolute;z-index:40;width:290px;min-height:118px;padding:14px;border-radius:16px;border:1px solid rgba(83,208,255,.35);background:linear-gradient(145deg,rgba(5,18,31,.97),rgba(8,31,51,.96));box-shadow:0 24px 55px rgba(0,0,0,.45),0 0 30px rgba(47,211,255,.1);backdrop-filter:blur(12px);opacity:0;visibility:hidden;transform:translate(-50%,10px) scale(.96);transition:.18s ease;pointer-events:none}
+    .staff-popover.show{opacity:1;visibility:visible;transform:translate(-50%,0) scale(1)}
+    .staff-card{display:grid;grid-template-columns:78px 1fr;gap:14px;align-items:center}.staff-photo{width:78px;height:92px;object-fit:cover;border-radius:12px;border:1px solid rgba(120,222,255,.34);background:#10263b}.staff-copy small{display:block;margin-bottom:6px;color:#2fd3ff;font:800 9px Arial,sans-serif;letter-spacing:.14em}.staff-copy h4{margin:0 0 6px;color:#fff;font:800 16px/1.12 Arial,sans-serif}.staff-copy p{margin:0;color:#8fb9e8;font:700 11px/1.45 Arial,sans-serif}.staff-seat{display:inline-block;margin-top:8px;padding:5px 7px;border-radius:999px;border:1px solid rgba(47,211,255,.2);color:#bcefff;background:rgba(47,211,255,.05);font:800 9px Arial,sans-serif;letter-spacing:.08em}
+    .oe-hint{position:absolute;right:27px;top:26px;z-index:6;padding:8px 11px;border-radius:999px;border:1px solid rgba(47,211,255,.22);background:rgba(3,14,26,.76);color:#8fc9e8;font:800 9px Arial,sans-serif;letter-spacing:.09em}
+    @media(max-width:800px){.office-explorer{padding:72px 0}.oe-stage{padding:14px}.layout-wrap{padding:8px;border-radius:14px}.layout-wrap img{border-radius:9px}.layout-wrap:after{left:16px;bottom:16px;font-size:8px;padding:6px 8px}.oe-caption{grid-template-columns:1fr}.oe-caption>span{display:none}.desk-hotspot{width:22px;height:22px;font-size:8px;border-width:1px}.staff-popover{width:min(270px,82vw)}.oe-hint{display:none}}
+  </style>
+  <div class="oe-head reveal">
+    <div class="oe-kicker">EXPLORE OUR SPACE</div>
+    <h2>Step inside <span>SEPC.</span></h2>
+    <p class="oe-sub">A visual overview of the SEPC office layout, showing our workspace arrangement and team environment.</p>
+  </div>
+  <div class="oe-shell reveal">
+    <div class="oe-toolbar"><div><strong>SEPC OFFICE</strong> / FLOOR LAYOUT</div><div class="oe-dots"><i></i><i></i><i></i></div></div>
+    <div class="oe-stage">
+      <div class="layout-wrap" id="officeLayout">
+        <img src="images/layout/sepc_office_layout.png" alt="SEPC office floor layout">
+        <div class="oe-hint">HOVER A DESK • VIEW STAFF</div>
+
+        <!-- Hotspot positions are percentage based, so they stay aligned when the image resizes. -->
+        <button class="desk-hotspot" style="left:15%;top:27%" data-staff="0" aria-label="Workstation 01">01</button>
+        <button class="desk-hotspot" style="left:27%;top:27%" data-staff="1" aria-label="Workstation 02">02</button>
+        <button class="desk-hotspot" style="left:37%;top:27%" data-staff="2" aria-label="Workstation 03">03</button>
+        <button class="desk-hotspot" style="left:48.5%;top:27%" data-staff="3" aria-label="Workstation 04">04</button>
+        <button class="desk-hotspot" style="left:68%;top:20%" data-staff="4" aria-label="Workstation 05">05</button>
+        
+		<button class="desk-hotspot" style="left:35%;top:49%" data-staff="5" aria-label="Workstation 06">06</button>
+        <button class="desk-hotspot" style="left:45%;top:49%" data-staff="6" aria-label="Workstation 07">07</button>
+        <button class="desk-hotspot" style="left:57%;top:49%" data-staff="7" aria-label="Workstation 08">08</button>
+        <button class="desk-hotspot" style="left:68%;top:49%" data-staff="8" aria-label="Workstation 09">09</button>
+       
+	    <button class="desk-hotspot" style="left:40%;top:70%" data-staff="9" aria-label="Workstation 10">10</button>
+        <button class="desk-hotspot" style="left:45%;top:70%" data-staff="10" aria-label="Workstation 11">11</button>
+        <button class="desk-hotspot" style="left:40%;top:78%" data-staff="11" aria-label="Workstation 12">12</button>
+        <button class="desk-hotspot" style="left:45%;top:78%" data-staff="12" aria-label="Workstation 13">13</button>
+        
+		<button class="desk-hotspot" style="left:68%;top:70%" data-staff="13" aria-label="Workstation 14">14</button>
+        <button class="desk-hotspot" style="left:74%;top:70%" data-staff="14" aria-label="Workstation 15">15</button>
+        <button class="desk-hotspot" style="left:68%;top:78%" data-staff="15" aria-label="Workstation 16">16</button>
+        <button class="desk-hotspot" style="left:74%;top:78%" data-staff="16" aria-label="Workstation 17">17</button>
+      
+
+        <div class="staff-popover" id="staffPopover" role="status" aria-live="polite">
+          <div class="staff-card">
+            <img class="staff-photo" id="staffPhoto" src="images/team/pc-1.jpg" alt="Staff photo">
+            <div class="staff-copy">
+              <small>SEPC WORKSTATION</small>
+              <h4 id="staffName">Staff Name</h4>
+              <p id="staffRole">Role / Position</p>
+              <span class="staff-seat" id="staffSeat">WS-01</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="oe-caption"><div><h3>SEPC Office Layout</h3><p>Hover over a glowing workstation marker to see the staff member, photo and role.</p></div><span>INTERACTIVE TEAM MAP</span></div>
+  </div>
+  <script>
+  (()=>{
+    // EDIT STAFF DETAILS HERE. Photo paths can point to your existing images/LAYOUT folder.
+    const staff=[
+      {name:'Compactor 01',role:'Role / Position',photo:'images/layout/management-1.jpg',seat:'WS-01'},
+      {name:'Compactor 02',role:'Role / Position',photo:'images/layout/management-2.jpg',seat:'WS-02'},
+      {name:'Compactor 03',role:'Role / Position',photo:'images/layout/management-3.jpg',seat:'WS-03'},
+      {name:'Compactor 04',role:'SPEC STORAGE - PC',photo:'images/layout/comp-4.jpg',seat:'PIC - PARTHIBAN'},
+      {name:'DISCUSSION ROOM',role:'8 - 10 Pax',photo:'images/layout/SEPC_DISCUSSION_ROOM.jpg',seat:'WS-05'},
+	  
+      {name:'KHOR SEONG HOCK',role:'MANAGER - PC',photo:'images/team/PC-1.jpg',seat:'WS-06'},
+      {name:'EMPTY',role:'EMPTY',photo:'images/team/EMPTY.png',seat:'EMPTY'},
+      {name:'MOHAMAD RASHID',role:'SENIOR MANAGER - SE',photo:'images/team/se-1.jpg',seat:'WS-08'},
+      {name:'EVONNE TEH',role:'SENIOR MANAGER - IMD',photo:'images/team/management-4.jpg',seat:'WS-09'},
+	  
+      {name:'EMPTY',role:'EMPTY',photo:'images/team/EMPTY.png',seat:'EMPTY'},
+      {name:'LEE PC',role:'EXECUTIVE - PC',photo:'images/team/pc-3.jpg',seat:'WS-11'},
+      {name:'ZAITULATHIKA',role:'EXECUTIVE - PC',photo:'images/team/pc-2.jpg',seat:'1161'},
+      {name:'PARTHIBAN',role:'TECHNICIAN - PC',photo:'images/team/pc-4.jpg',seat:'WS-13'},
+	  
+	  
+      {name:'MUHAMMAD FAIZ',role:'ENGINEER - SE',photo:'images/team/SE-4.jpg',seat:'WS-15'},
+      {name:'RAJA MOHAMED RIZAL',role:'ENGINEER - SE',photo:'images/team/SE-2.jpg',seat:'WS-15'},
+      {name:'EMPTY',role:'EMPTY',photo:'images/team/EMPTY.png',seat:'WS-15'},
+      {name:'NURUL SYAFIKA',role:'ENGINEER - SE',photo:'images/team/SE-3.jpg',seat:'WS-15'},
+ 
+    ];
+    const wrap=document.getElementById('officeLayout');
+    const pop=document.getElementById('staffPopover');
+    const photo=document.getElementById('staffPhoto');
+    const name=document.getElementById('staffName');
+    const role=document.getElementById('staffRole');
+    const seat=document.getElementById('staffSeat');
+    if(!wrap||!pop)return;
+    let current=null,hideTimer=null;
+    function show(btn){
+      clearTimeout(hideTimer);
+      const d=staff[Number(btn.dataset.staff)]||{};
+      name.textContent=d.name||'Staff'; role.textContent=d.role||'Role / Position'; seat.textContent=d.seat||'';
+      photo.src=d.photo||'images/team/pc-1.jpg'; photo.alt=(d.name||'Staff')+' photo';
+      wrap.querySelectorAll('.desk-hotspot').forEach(b=>b.classList.toggle('is-active',b===btn));
+      const x=btn.offsetLeft, y=btn.offsetTop, w=wrap.clientWidth;
+      const half=145;
+      const safeX=Math.max(half+10,Math.min(w-half-10,x));
+      pop.style.left=safeX+'px';
+      pop.style.top=Math.max(10,y-142)+'px';
+      pop.classList.add('show'); current=btn;
+    }
+    function hideSoon(){hideTimer=setTimeout(()=>{pop.classList.remove('show');wrap.querySelectorAll('.desk-hotspot').forEach(b=>b.classList.remove('is-active'));current=null},120)}
+    wrap.querySelectorAll('.desk-hotspot').forEach(btn=>{
+      btn.addEventListener('mouseenter',()=>show(btn));
+      btn.addEventListener('focus',()=>show(btn));
+      btn.addEventListener('mouseleave',hideSoon);
+      btn.addEventListener('blur',hideSoon);
+      btn.addEventListener('click',e=>{e.preventDefault();show(btn)});
+    });
+    addEventListener('resize',()=>{if(current)show(current)});
+  })();
+  </script>
+</section>
+
+<section id="build-sepc-section">
+<style>
+
+    #build-sepc-section{
+      --bg:#06111d;
+      --panel:#0b1a2b;
+      --panel2:#0e2238;
+      --border:rgba(255,255,255,.10);
+      --text:#f6f9fc;
+      --muted:#94a7bb;
+      --blue:#59adff;
+      --green:#79d8b0;
+      --red:#ef7b85;
+      --soft-blue:rgba(89,173,255,.10);
+      --soft-green:rgba(121,216,176,.10);
+    }
+
+    *{box-sizing:border-box}
+
+    #build-sepc-section{
+      margin:0;
+      min-height:100vh;
+      font-family:Inter,Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 50% 10%, rgba(56,132,219,.13), transparent 35%),
+        linear-gradient(180deg,#05101b,#071522 68%,#06111c);
+    }
+
+    .bs-wrap{
+      width:min(1240px,calc(100% - 32px));
+      margin:0 auto;
+      padding:70px 0 90px;
+    }
+
+    .bs-head{
+      max-width:760px;
+      margin:0 auto 34px;
+      text-align:center;
+    }
+
+    .bs-eyebrow{
+      color:var(--blue);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:3px;
+    }
+
+    .bs-head h1{
+      margin:10px 0 8px;
+      font-size:clamp(38px,6vw,68px);
+      letter-spacing:-2px;
+    }
+
+    .bs-head p{
+      margin:0 auto;
+      max-width:680px;
+      color:var(--muted);
+      line-height:1.65;
+    }
+
+    .bs-game{
+      border:1px solid var(--border);
+      border-radius:30px;
+      overflow:hidden;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+        rgba(7,20,34,.96);
+      background-size:36px 36px,36px 36px,auto;
+      box-shadow:inset 0 0 90px rgba(0,0,0,.25);
+    }
+
+    .bs-topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:20px 24px;
+      border-bottom:1px solid var(--border);
+      background:rgba(4,15,27,.74);
+    }
+
+    .bs-status{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .bs-dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:var(--blue);
+      box-shadow:0 0 14px rgba(89,173,255,.45);
+    }
+
+    .bs-status strong{
+      font-size:13px;
+      letter-spacing:1.2px;
+    }
+
+    .progress-text{
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .bs-content{
+      padding:28px;
+    }
+
+    .bs-instruction{
+      text-align:center;
+      margin-bottom:24px;
+    }
+
+    .bs-instruction h2{
+      margin:0 0 7px;
+      font-size:26px;
+    }
+
+    .bs-instruction p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .bs-pieces{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+      margin-bottom:26px;
+    }
+
+    .bs-piece{
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:rgba(255,255,255,.025);
+      color:var(--text);
+      min-height:78px;
+      padding:16px;
+      cursor:grab;
+      transition:.25s ease;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:5px;
+      user-select:none;
+    }
+
+    .bs-piece:hover{
+      transform:translateY(-3px);
+      border-color:rgba(89,173,255,.45);
+    }
+
+    .bs-piece:active{cursor:grabbing}
+
+    .bs-piece small{
+      color:var(--muted);
+      font-size:10px;
+      letter-spacing:1.4px;
+    }
+
+    .bs-piece strong{
+      font-size:16px;
+    }
+
+    .bs-piece.dragging{
+      opacity:.45;
+      transform:scale(.97);
+    }
+
+    .bs-piece.locked{
+      opacity:.35;
+      pointer-events:none;
+      filter:saturate(.35);
+    }
+
+    .bs-zones{
+      display:grid;
+      grid-template-columns:1fr 120px 1fr;
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .bs-zone{
+      border:1px dashed rgba(255,255,255,.16);
+      border-radius:24px;
+      min-height:330px;
+      padding:22px;
+      position:relative;
+      transition:.25s ease;
+      background:rgba(255,255,255,.018);
+    }
+
+    .bs-zone.bs-se{
+      background:linear-gradient(180deg,rgba(89,173,255,.055),rgba(255,255,255,.015));
+    }
+
+    .bs-zone.bs-pc{
+      background:linear-gradient(180deg,rgba(121,216,176,.050),rgba(255,255,255,.015));
+    }
+
+    .bs-zone.drag-over{
+      transform:scale(1.01);
+      border-color:var(--blue);
+      box-shadow:0 0 30px rgba(89,173,255,.10);
+    }
+
+    .bs-zone-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:18px;
+    }
+
+    .bs-zone-head .code{
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      font-size:24px;
+      font-weight:800;
+      border:1px solid rgba(89,173,255,.35);
+      background:rgba(89,173,255,.08);
+      color:var(--blue);
+    }
+
+    .bs-pc .bs-zone-head .code{
+      border-color:rgba(121,216,176,.35);
+      background:rgba(121,216,176,.08);
+      color:var(--green);
+    }
+
+    .bs-zone-head h3{
+      margin:0 0 5px;
+      font-size:21px;
+    }
+
+    .bs-zone-head p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.45;
+      font-size:12px;
+    }
+
+    .bs-score{
+      color:var(--muted);
+      font-size:11px;
+      white-space:nowrap;
+      padding-top:5px;
+    }
+
+    .bs-slots{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .bs-slot{
+      min-height:82px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:15px;
+      background:rgba(6,19,32,.68);
+      display:grid;
+      place-items:center;
+      text-align:center;
+      color:rgba(255,255,255,.30);
+      font-size:12px;
+      padding:10px;
+      transition:.25s ease;
+    }
+
+    .bs-slot.filled{
+      color:#d7e2eb;
+      border-color:rgba(89,173,255,.25);
+      background:rgba(89,173,255,.07);
+      animation:pop .3s ease;
+    }
+
+    .bs-pc .bs-slot.filled{
+      border-color:rgba(121,216,176,.25);
+      background:rgba(121,216,176,.06);
+    }
+
+    .bs-slot.wrong{
+      border-color:rgba(239,123,133,.5);
+      background:rgba(239,123,133,.08);
+      color:#f5bec4;
+      animation:shake .3s ease;
+    }
+
+    @keyframes pop{
+      from{transform:scale(.94);opacity:.55}
+      to{transform:scale(1);opacity:1}
+    }
+
+    @keyframes shake{
+      0%,100%{transform:translateX(0)}
+      25%{transform:translateX(-5px)}
+      75%{transform:translateX(5px)}
+    }
+
+    .bs-merge-core{
+      display:grid;
+      place-items:center;
+      position:relative;
+    }
+
+    .bs-merge-line{
+      position:absolute;
+      top:50%;
+      left:0;
+      right:0;
+      height:2px;
+      background:linear-gradient(90deg,var(--blue),rgba(255,255,255,.15),var(--green));
+      opacity:.35;
+    }
+
+    .bs-core{
+      position:relative;
+      z-index:2;
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      background:#0a1a2c;
+      border:1px solid var(--border);
+      box-shadow:0 0 30px rgba(89,173,255,.08);
+      transition:.35s ease;
+    }
+
+    .bs-core span{
+      color:var(--muted);
+      font-size:10px;
+      letter-spacing:1.4px;
+    }
+
+    .bs-core strong{
+      display:block;
+      margin-top:4px;
+      font-size:24px;
+    }
+
+    .bs-core.ready{
+      border-color:rgba(89,173,255,.5);
+      box-shadow:0 0 42px rgba(89,173,255,.18);
+      transform:scale(1.08);
+    }
+
+    .bs-feedback{
+      margin-top:24px;
+      min-height:58px;
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:rgba(255,255,255,.02);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:var(--muted);
+      padding:14px 18px;
+      font-size:13px;
+    }
+
+    .bs-complete{
+      display:none;
+      margin-top:24px;
+      border:1px solid rgba(89,173,255,.24);
+      border-radius:22px;
+      background:
+        radial-gradient(circle at center, rgba(89,173,255,.10), transparent 60%),
+        rgba(255,255,255,.02);
+      padding:28px;
+      text-align:center;
+      animation:reveal .45s ease;
+    }
+
+    .bs-complete.show{display:block}
+
+    @keyframes reveal{
+      from{opacity:0;transform:translateY(10px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .bs-complete small{
+      color:var(--blue);
+      letter-spacing:2px;
+      font-size:11px;
+    }
+
+    .bs-complete h2{
+      margin:8px 0 10px;
+      font-size:38px;
+    }
+
+    .bs-complete p{
+      margin:0 auto;
+      max-width:720px;
+      color:var(--muted);
+      line-height:1.65;
+    }
+
+    .bs-complete-flow{
+      margin:22px auto 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .bs-complete-flow span{
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:9px 13px;
+      background:rgba(6,19,32,.7);
+      color:#cfdae3;
+      font-size:12px;
+    }
+
+    .bs-complete-flow b{
+      color:var(--blue);
+      font-size:18px;
+    }
+
+    .bs-actions{
+      display:flex;
+      justify-content:center;
+      margin-top:20px;
+    }
+
+    .bs-reset{
+      border:1px solid rgba(89,173,255,.28);
+      background:rgba(89,173,255,.08);
+      color:white;
+      border-radius:12px;
+      padding:11px 18px;
+      cursor:pointer;
+    }
+
+    @media(max-width:960px){
+      .bs-pieces{grid-template-columns:repeat(2,1fr)}
+      .bs-zones{grid-template-columns:1fr}
+      .bs-merge-core{min-height:120px}
+      .bs-merge-line{top:50%;left:50%;right:auto;width:2px;height:100%;transform:translateX(-50%);background:linear-gradient(180deg,var(--blue),rgba(255,255,255,.15),var(--green))}
+    }
+
+    @media(max-width:560px){
+      .bs-pieces{grid-template-columns:1fr}
+      .bs-slots{grid-template-columns:1fr}
+      .bs-content{padding:20px}
+      .bs-topbar{align-items:flex-start;flex-direction:column}
+    }
+  
+#build-sepc-section {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0 100px;
+  color: var(--text);
+  background: radial-gradient(circle at 50% 10%, rgba(56,132,219,.13), transparent 35%), linear-gradient(180deg,#05101b,#071522 68%,#06111c);
+  border-top: 1px solid rgba(75,165,255,.16);
+}
+#build-sepc-section .bs-wrap {
+  width:min(1240px,calc(100% - 32px));
+  margin:0 auto;
+}
+</style>
+<div class="bs-wrap">
+
+    <header class="bs-head">
+      <div class="bs-eyebrow">INTERACTIVE MINI GAME</div>
+      <h1>Build SEPC</h1>
+      <p>
+        Drag each responsibility into the right function. Complete both sides to reveal
+        how SE and PC come together as one connected team.
+      </p>
+    </header>
+
+    <section class="bs-game">
+      <div class="bs-topbar">
+        <div class="bs-status">
+          <span class="bs-dot"></span>
+          <strong>BUILD THE DEPARTMENT</strong>
+        </div>
+        <div class="progress-text" id="progressText">0 / 8 FUNCTIONS PLACED</div>
+      </div>
+
+      <div class="bs-content">
+        <div class="bs-instruction">
+          <h2>Where does each function belong?</h2>
+          <p>Drag the tiles into SE or PC. Incorrect placement will bounce back.</p>
+        </div>
+
+        <div class="bs-pieces" id="pieces">
+          <div class="bs-piece" draggable="true" data-id="process" data-group="se">
+            <small>FUNCTION</small><strong>Process</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="demand" data-group="pc">
+            <small>FUNCTION</small><strong>Demand</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="analyze" data-group="se">
+            <small>FUNCTION</small><strong>Analyze</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="plan" data-group="pc">
+            <small>FUNCTION</small><strong>Plan</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="improve" data-group="se">
+            <small>FUNCTION</small><strong>Improve</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="monitor" data-group="pc">
+            <small>FUNCTION</small><strong>Monitor</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="standardize" data-group="se">
+            <small>FUNCTION</small><strong>Standardize</strong>
+          </div>
+          <div class="bs-piece" draggable="true" data-id="adjust" data-group="pc">
+            <small>FUNCTION</small><strong>Adjust</strong>
+          </div>
+        </div>
+
+        <div class="bs-zones">
+          <section class="bs-zone bs-se" data-zone="se">
+            <div class="bs-zone-head">
+              <div style="display:flex; gap:14px;">
+                <div class="code">SE</div>
+                <div>
+                  <h3>Sustainable Engineering</h3>
+                  <p>Improve how production works.</p>
+                </div>
+              </div>
+              <div class="bs-score" id="seScore">0 / 4</div>
+            </div>
+
+            <div class="bs-slots">
+              <div class="bs-slot" data-slot="process">DROP HERE</div>
+              <div class="bs-slot" data-slot="analyze">DROP HERE</div>
+              <div class="bs-slot" data-slot="improve">DROP HERE</div>
+              <div class="bs-slot" data-slot="standardize">DROP HERE</div>
+            </div>
+          </section>
+
+          <div class="bs-merge-core">
+            <div class="bs-merge-line"></div>
+            <div class="bs-core" id="core">
+              <div>
+                <span>BUILDING</span>
+                <strong>SEPC</strong>
+              </div>
+            </div>
+          </div>
+
+          <section class="bs-zone bs-pc" data-zone="pc">
+            <div class="bs-zone-head">
+              <div style="display:flex; gap:14px;">
+                <div class="code">PC</div>
+                <div>
+                  <h3>Production Control</h3>
+                  <p>Keep production aligned to plan.</p>
+                </div>
+              </div>
+              <div class="bs-score" id="pcScore">0 / 4</div>
+            </div>
+
+            <div class="bs-slots">
+              <div class="bs-slot" data-slot="demand">DROP HERE</div>
+              <div class="bs-slot" data-slot="plan">DROP HERE</div>
+              <div class="bs-slot" data-slot="monitor">DROP HERE</div>
+              <div class="bs-slot" data-slot="adjust">DROP HERE</div>
+            </div>
+          </section>
+        </div>
+
+        <div class="bs-feedback" id="feedback">
+          Start by dragging any function tile into SE or PC.
+        </div>
+
+        <section class="bs-complete" id="complete">
+          <small>DEPARTMENT COMPLETE</small>
+          <h2>SE + PC = SEPC</h2>
+          <p>
+            SE strengthens the production process. PC keeps production aligned with demand
+            and the plan. Together, both functions connect improvement, planning,
+            coordination and execution.
+          </p>
+
+          <div class="bs-complete-flow">
+            <span>PROCESS</span><b>+</b>
+            <span>PLANNING</span><b>+</b>
+            <span>MONITORING</span><b>+</b>
+            <span>IMPROVEMENT</span>
+          </div>
+
+          <div class="bs-actions">
+            <button class="bs-reset" id="resetBtn" type="button">Build again</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  
+</div>
+<script>
+
+    const pieces = [...document.querySelectorAll(".bs-piece")];
+    const zones = [...document.querySelectorAll(".bs-zone")];
+    const slots = [...document.querySelectorAll(".bs-slot")];
+
+    const progressText = document.getElementById("progressText");
+    const seScore = document.getElementById("seScore");
+    const pcScore = document.getElementById("pcScore");
+    const feedback = document.getElementById("feedback");
+    const complete = document.getElementById("complete");
+    const core = document.getElementById("core");
+    const resetBtn = document.getElementById("resetBtn");
+
+    let dragged = null;
+    let placed = new Set();
+
+    const labels = {
+      process: "Process",
+      analyze: "Analyze",
+      improve: "Improve",
+      standardize: "Standardize",
+      demand: "Demand",
+      plan: "Plan",
+      monitor: "Monitor",
+      adjust: "Adjust"
+    };
+
+    pieces.forEach(piece => {
+      piece.addEventListener("dragstart", () => {
+        dragged = piece;
+        piece.classList.add("dragging");
+      });
+
+      piece.addEventListener("dragend", () => {
+        piece.classList.remove("dragging");
+        dragged = null;
+        zones.forEach(z => z.classList.remove("drag-over"));
+      });
+    });
+
+    zones.forEach(zone => {
+      zone.addEventListener("dragover", e => {
+        e.preventDefault();
+        zone.classList.add("drag-over");
+      });
+
+      zone.addEventListener("dragleave", () => {
+        zone.classList.remove("drag-over");
+      });
+
+      zone.addEventListener("drop", e => {
+        e.preventDefault();
+        zone.classList.remove("drag-over");
+        if (!dragged) return;
+
+        const expectedGroup = dragged.dataset.group;
+        const targetGroup = zone.dataset.zone;
+        const id = dragged.dataset.id;
+
+        if (expectedGroup !== targetGroup) {
+          feedback.textContent = `${labels[id]} does not belong in ${targetGroup.toUpperCase()}. Try the other side.`;
+          const wrongSlot = zone.querySelector(".bs-slot:not(.filled)");
+          if (wrongSlot) {
+            wrongSlot.classList.add("wrong");
+            setTimeout(() => wrongSlot.classList.remove("wrong"), 450);
+          }
+          return;
+        }
+
+        const slot = zone.querySelector(`[data-slot="${id}"]`);
+        if (!slot || placed.has(id)) return;
+
+        slot.textContent = labels[id];
+        slot.classList.add("filled");
+        dragged.classList.add("locked");
+        placed.add(id);
+
+        feedback.textContent = `${labels[id]} placed correctly under ${targetGroup.toUpperCase()}.`;
+        updateProgress();
+      });
+    });
+
+    function updateProgress() {
+      const seCount = [...placed].filter(id =>
+        ["process","analyze","improve","standardize"].includes(id)
+      ).length;
+
+      const pcCount = [...placed].filter(id =>
+        ["demand","plan","monitor","adjust"].includes(id)
+      ).length;
+
+      progressText.textContent = `${placed.size} / 8 FUNCTIONS PLACED`;
+      seScore.textContent = `${seCount} / 4`;
+      pcScore.textContent = `${pcCount} / 4`;
+
+      if (placed.size >= 6) {
+        core.classList.add("ready");
+      }
+
+      if (placed.size === 8) {
+        feedback.textContent = "SEPC complete — both functions are now connected.";
+        complete.classList.add("show");
+        core.classList.add("ready");
+        complete.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    }
+
+    resetBtn.addEventListener("click", () => {
+      placed.clear();
+
+      pieces.forEach(piece => {
+        piece.classList.remove("locked");
+      });
+
+      slots.forEach(slot => {
+        slot.classList.remove("filled","wrong");
+        slot.textContent = "DROP HERE";
+      });
+
+      progressText.textContent = "0 / 8 FUNCTIONS PLACED";
+      seScore.textContent = "0 / 4";
+      pcScore.textContent = "0 / 4";
+      feedback.textContent = "Start by dragging any function tile into SE or PC.";
+      complete.classList.remove("show");
+      core.classList.remove("ready");
+    });
+  
+</script>
+</section>
+
+</main>
+<footer class="site-footer"><div class="container footer-wrap"><a class="brand" href="index.html"><span>TEAM</span><strong>SEPC</strong></a><p>Leadership through people, ownership & continuous improvement.</p><div class="footer-links"><a href="leadership.html">Leadership</a><a href="team.html">Team</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div><p>© <span data-year></span> TEAM SEPC</p></div></footer><script src="js/script.js"></script></body></html>

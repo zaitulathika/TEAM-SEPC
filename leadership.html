@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TEAM SEPC leadership — Forge the Future: Driving 5S Excellence">
+<title>Leadership | TEAM SEPC</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+:root{
+  --forge-blue:#0a6dbb; --forge-navy:#071827; --forge-deep:#0b2235;
+  --forge-green:#54b72c; --forge-yellow:#ffd42a; --forge-red:#ef2438;
+  --forge-white:#f7fbff; --forge-muted:#a9bfd0;
+}
+*{box-sizing:border-box}
+body{background:#071827;color:#fff}
+.forge-hero{position:relative;min-height:86vh;display:flex;align-items:center;overflow:hidden;
+background:
+radial-gradient(circle at 75% 45%,rgba(84,183,44,.18),transparent 26%),
+linear-gradient(115deg,rgba(4,17,29,.97),rgba(7,24,39,.87)),
+url('images/leadership/forge-hero.jpg') center/cover no-repeat}
+.forge-hero:after{content:"";position:absolute;inset:auto -10% -38% 35%;height:70%;background:linear-gradient(90deg,transparent,rgba(10,109,187,.18));transform:skewY(-8deg)}
+.forge-hero .container{position:relative;z-index:2}
+.forge-kicker{font-weight:900;letter-spacing:.22em;color:var(--forge-yellow);font-size:.82rem}
+.forge-title{font-size:clamp(3.2rem,8vw,7.5rem);line-height:.86;margin:.2em 0 .12em;text-transform:uppercase;letter-spacing:-.055em}
+.forge-title span{display:block;color:transparent;-webkit-text-stroke:2px var(--forge-green)}
+.forge-subtitle{display:inline-block;background:var(--forge-green);padding:.5rem 1rem;border-radius:999px;color:#fff;font-weight:900;letter-spacing:.08em}
+.forge-lead{max-width:720px;color:#d7e4ed;font-size:1.1rem;margin-top:1.4rem}
+.forge-score{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.7rem}
+.score-chip{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);backdrop-filter:blur(10px);padding:.65rem .9rem;border-radius:12px}
+.score-chip strong{color:var(--forge-yellow)}
+.forge-section{padding:90px 0;background:#081b2b}
+.forge-section.alt{background:#f4f8fb;color:#0b2235}
+.forge-heading{max-width:780px;margin-bottom:42px}
+.forge-heading .mini{color:var(--forge-green);font-weight:900;letter-spacing:.16em;font-size:.78rem}
+.forge-heading h2{font-size:clamp(2rem,4vw,3.6rem);margin:.35rem 0 .6rem;line-height:1}
+.forge-heading p{color:#abc0cf}
+.alt .forge-heading p{color:#5e7180}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pillar{position:relative;min-height:390px;padding:30px;border:1px solid rgba(255,255,255,.12);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));overflow:hidden;transition:.35s}
+.pillar:hover{transform:translateY(-8px);border-color:rgba(84,183,44,.7);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.pillar .num{font-size:4.5rem;font-weight:950;color:rgba(255,255,255,.08);line-height:1}
+.pillar h3{font-size:1.55rem;margin:.8rem 0}
+.pillar .criterion{color:var(--forge-yellow);font-weight:800}
+.pillar p{color:#b9cbd7}
+.pillar .reveal-more{margin-top:25px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);opacity:.72;transition:.3s}
+.pillar:hover .reveal-more{opacity:1}
+.pillar .tag{display:inline-block;margin-top:12px;border:1px solid rgba(84,183,44,.5);color:#bdf5a5;padding:.35rem .6rem;border-radius:999px;font-size:.75rem;font-weight:800}
+.audit-map{display:grid;grid-template-columns:210px 1fr;gap:24px;align-items:start}
+.audit-nav{position:sticky;top:100px;display:grid;gap:10px}
+.audit-btn{width:100%;text-align:left;border:0;border-radius:14px;padding:15px;background:#e5edf3;color:#16344a;font-weight:850;cursor:pointer;transition:.2s}
+.audit-btn.active,.audit-btn:hover{background:#0a6dbb;color:white}
+.audit-panel{display:none;background:white;border-radius:22px;padding:30px;box-shadow:0 18px 55px rgba(15,42,61,.12)}
+.audit-panel.active{display:block}
+.audit-panel h3{margin-top:0;font-size:1.7rem}
+.audit-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.audit-item{padding:17px;border-radius:14px;background:#f1f6f9;border-left:4px solid #0a6dbb;font-weight:750}
+.story-strip{display:grid;grid-template-columns:1.05fr 1fr;gap:30px;align-items:center}
+.story-visual{min-height:390px;border-radius:24px;background:linear-gradient(135deg,rgba(84,183,44,.18),rgba(10,109,187,.14)),url('images/leadership/leadership-action.jpg') center/cover no-repeat;border:1px solid rgba(255,255,255,.12);display:flex;align-items:flex-end;padding:25px}
+.story-visual .placeholder{background:rgba(5,18,29,.78);padding:14px 18px;border-radius:12px;color:#d8e8f2}
+.action-list{display:grid;gap:12px}
+.action{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;padding:15px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1)}
+.action b{display:grid;place-items:center;width:45px;height:45px;border-radius:50%;background:var(--forge-green)}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.evidence{min-height:220px;border-radius:20px;padding:22px;background:#fff;border:1px solid #dce7ee;box-shadow:0 12px 35px rgba(15,42,61,.07)}
+.evidence .icon{font-size:1.8rem}.evidence h3{margin:.7rem 0 .4rem}.evidence p{color:#637785}
+.forge-close{padding:100px 0;text-align:center;background:linear-gradient(135deg,#06131f,#0a2840)}
+.forge-close h2{font-size:clamp(2.4rem,6vw,5.5rem);line-height:.95;margin:0}
+.forge-close h2 span{color:var(--forge-green)}
+.forge-close p{max-width:700px;margin:20px auto;color:#b8cad6;font-size:1.1rem}
+.forge-close .line{width:100px;height:5px;background:var(--forge-yellow);margin:28px auto;border-radius:99px}
+@media(max-width:900px){
+ .pillar-grid,.story-strip,.evidence-grid{grid-template-columns:1fr}
+ .audit-map{grid-template-columns:1fr}.audit-nav{position:static;grid-template-columns:repeat(2,1fr)}
+ .audit-items{grid-template-columns:1fr}.forge-hero{min-height:72vh}
+}
+
+/* ===== INTERACTIVE FORGE EXPERIENCE ===== */
+.game-shell{border:1px solid rgba(255,255,255,.12);border-radius:28px;background:
+linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));overflow:hidden;
+box-shadow:0 30px 90px rgba(0,0,0,.22)}
+.game-top{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:26px 28px;border-bottom:1px solid rgba(255,255,255,.1)}
+.game-title h3{font-size:1.7rem;margin:0 0 5px}.game-title p{margin:0;color:#aac0cf}
+.forge-meter{min-width:210px}.forge-meter-top{display:flex;justify-content:space-between;font-size:.8rem;font-weight:850;margin-bottom:7px}
+.meter-track{height:12px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden}
+.meter-fill{height:100%;width:0;background:linear-gradient(90deg,var(--forge-red),var(--forge-yellow),var(--forge-green));transition:.45s ease}
+.game-tabs{display:flex;gap:8px;overflow:auto;padding:14px 20px;background:rgba(0,0,0,.13)}
+.game-tab{flex:0 0 auto;border:1px solid rgba(255,255,255,.12);background:transparent;color:#c7d8e4;border-radius:999px;padding:9px 14px;font-weight:850;cursor:pointer}
+.game-tab.active{background:var(--forge-green);color:#fff;border-color:var(--forge-green)}
+.game-stage{display:none;padding:30px}.game-stage.active{display:block}
+.challenge-head{display:flex;justify-content:space-between;gap:16px;align-items:start;margin-bottom:22px}
+.challenge-head h4{font-size:1.45rem;margin:0 0 5px}.challenge-head p{margin:0;color:#abc0cf;max-width:760px}
+.points-badge{white-space:nowrap;background:rgba(255,212,42,.12);border:1px solid rgba(255,212,42,.35);color:var(--forge-yellow);padding:7px 10px;border-radius:10px;font-weight:900}
+
+/* Sort game */
+.sort-board{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}
+.item-bank,.drop-zone{min-height:230px;border-radius:18px;padding:18px}
+.item-bank{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.drop-zone{border:2px dashed rgba(255,255,255,.2);transition:.2s}
+.drop-zone.dragover{border-color:var(--forge-yellow);background:rgba(255,212,42,.06)}
+.drop-zone h5,.item-bank h5{margin:0 0 14px;font-size:1rem}
+.draggable{padding:11px 13px;margin:9px 0;background:#f5f9fc;color:#123149;border-radius:11px;font-weight:800;cursor:grab;box-shadow:0 5px 20px rgba(0,0,0,.14)}
+.draggable.correct{outline:2px solid var(--forge-green)}.draggable.wrong{outline:2px solid var(--forge-red)}
+.zone-keep h5{color:#a7ee8b}.zone-discard h5{color:#ff8793}
+
+/* Spot hazard */
+.hazard-scene{position:relative;min-height:330px;border-radius:20px;background:
+linear-gradient(rgba(5,18,29,.15),rgba(5,18,29,.3)),
+linear-gradient(135deg,#d9e5eb 0 31%,#c0ccd2 31% 34%,#eaf0f3 34% 100%);overflow:hidden;border:1px solid rgba(255,255,255,.12)}
+.desk{position:absolute;background:#7e929d;border-radius:9px;height:45px;width:165px}
+.d1{left:12%;top:20%}.d2{right:12%;top:24%}.d3{left:38%;bottom:18%}
+.hazard{position:absolute;border:0;background:transparent;font-size:2rem;cursor:pointer;filter:drop-shadow(0 5px 5px rgba(0,0,0,.2));transition:.2s}
+.hazard:hover{transform:scale(1.18)}.hazard.found{opacity:.3;transform:scale(.85)}
+.h1{left:47%;top:12%}.h2{left:25%;bottom:12%}.h3{right:20%;bottom:17%}
+.hazard-counter{margin-top:10px;color:#bed0db;font-weight:800}
+
+/* Label match */
+.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.match-col{display:grid;gap:10px}
+.match-card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.055);color:white;padding:13px 15px;border-radius:12px;text-align:left;font-weight:800;cursor:pointer}
+.match-card.selected{border-color:var(--forge-yellow);box-shadow:0 0 0 2px rgba(255,212,42,.12)}
+.match-card.matched{border-color:var(--forge-green);opacity:.55}
+
+/* Scenario */
+.scenario-card{padding:23px;border-radius:20px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12)}
+.scenario-card h5{font-size:1.2rem;margin:0 0 8px}.scenario-options{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:16px}
+.scenario-btn{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:white;border-radius:13px;padding:14px;text-align:left;cursor:pointer;font-weight:800}
+.scenario-btn:hover{border-color:var(--forge-yellow)}.scenario-btn.correct{background:rgba(84,183,44,.18);border-color:var(--forge-green)}.scenario-btn.wrong{background:rgba(239,36,56,.13);border-color:var(--forge-red)}
+.game-feedback{min-height:28px;margin-top:13px;font-weight:850;color:var(--forge-yellow)}
+.game-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.game-btn{border:0;border-radius:12px;padding:11px 16px;font-weight:900;cursor:pointer;background:var(--forge-blue);color:white}
+.game-btn.secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15)}
+.game-complete{display:none;margin:25px 28px 30px;padding:25px;border-radius:20px;background:linear-gradient(120deg,rgba(84,183,44,.2),rgba(10,109,187,.15));border:1px solid rgba(84,183,44,.4);text-align:center}
+.game-complete.show{display:block}.game-complete strong{display:block;font-size:2rem;color:var(--forge-yellow)}
+.forge-stamp{display:inline-grid;place-items:center;width:92px;height:92px;border:4px solid var(--forge-green);border-radius:50%;font-weight:950;transform:rotate(-8deg);margin-bottom:10px;color:#c8ffb0;letter-spacing:.06em}
+@media(max-width:900px){
+ .sort-board,.scenario-options{grid-template-columns:1fr}.match-grid{grid-template-columns:1fr}
+ .game-top{grid-template-columns:1fr}.forge-meter{min-width:0}.challenge-head{display:block}.points-badge{display:inline-block;margin-top:10px}
+}
+
+
+/* 5S ACTUAL PRACTICE GALLERY */
+.audit-items{grid-template-columns:repeat(3,1fr)!important;gap:16px!important}
+.evidence-card{background:#fff;border:1px solid #dbe6ed;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(15,42,61,.08);cursor:pointer;transition:.25s}
+.evidence-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(15,42,61,.14)}
+.evidence-photo{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#dfe8ee,#eef4f7);overflow:hidden}
+.evidence-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;color:#6d8493}
+.photo-placeholder span{font-size:2.2rem;display:block}.photo-placeholder strong{display:block;color:#0a6dbb;font-size:.78rem;letter-spacing:.08em}.photo-placeholder small{display:block;margin-top:5px}
+.evidence-chip{position:absolute;top:11px;left:11px;background:rgba(6,24,39,.84);color:#fff;padding:6px 9px;border-radius:999px;font-size:.65rem;font-weight:900;letter-spacing:.06em}
+.evidence-body{padding:17px}.evidence-body h4{margin:0 0 7px;color:#0b2235;font-size:1rem}.evidence-body p{margin:0;color:#667b89;font-size:.85rem;line-height:1.45}.evidence-link{display:inline-block;margin-top:10px;color:#0a6dbb;font-weight:900;font-size:.78rem}
+.panel-intro{color:#687c8b;margin:-4px 0 18px}
+.audit-item{padding:0!important;background:transparent!important;border-left:0!important}
+.evidence-lightbox{position:fixed;inset:0;z-index:9999;background:rgba(3,13,22,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.evidence-lightbox.open{display:flex}.lightbox-shell{width:min(1100px,96vw);max-height:92vh;overflow:auto;border-radius:24px;background:#fff;color:#0b2235;box-shadow:0 30px 100px rgba(0,0,0,.5)}
+.lightbox-image{min-height:420px;background:#edf3f6;display:grid;place-items:center}.lightbox-image img{width:100%;max-height:65vh;object-fit:contain;display:block}
+.lightbox-placeholder{text-align:center;color:#718895;padding:40px}.lightbox-placeholder span{font-size:4rem;display:block;margin-bottom:10px}
+.lightbox-content{padding:25px 28px 30px}.lightbox-meta{color:#54b72c;font-size:.72rem;font-weight:950;letter-spacing:.13em}.lightbox-content h3{font-size:1.7rem;margin:7px 0 8px}.lightbox-content p{color:#607585;margin:0}
+.lightbox-close{position:fixed;right:22px;top:18px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;font-size:1.5rem;cursor:pointer}
+.lightbox-nav{display:flex;justify-content:space-between;gap:10px;margin-top:18px}.lightbox-nav button{border:0;border-radius:11px;padding:10px 14px;font-weight:900;cursor:pointer}.lightbox-nav .prev{background:#eaf1f5;color:#17384f}.lightbox-nav .next{background:#0a6dbb;color:#fff}
+@media(max-width:900px){.audit-items{grid-template-columns:1fr!important}.lightbox-image{min-height:260px}}
+
+
+/* ===== DARK THEME OVERRIDE: 5S IN PRACTICE ===== */
+.forge-section.alt{background:#081b2b;color:#fff}
+.forge-section.alt .forge-heading p{color:#abc0cf}
+.forge-section.alt .forge-heading h2{color:#fff}
+.forge-section.alt .forge-heading .mini{color:var(--forge-green)}
+
+.audit-btn{background:#10293a;color:#c8d8e3;border:1px solid rgba(255,255,255,.08);position:relative;overflow:hidden}
+.audit-btn:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:transparent;transition:.2s}
+.audit-btn:hover{background:#16374b;color:#fff;transform:translateX(3px)}
+.audit-btn.active{background:linear-gradient(135deg,rgba(84,183,44,.24),rgba(84,183,44,.12));color:#fff;border-color:rgba(84,183,44,.7);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.audit-btn.active:before{background:var(--forge-green)}
+
+.audit-panel{background:linear-gradient(145deg,#10293a,#0b2232);color:#fff;border:1px solid rgba(255,255,255,.1);box-shadow:0 24px 70px rgba(0,0,0,.24)}
+.audit-panel h3{color:#fff}
+.audit-panel h3 small{color:#9fb4c2;font-weight:700}
+.panel-intro{color:#a9bfd0}
+
+.evidence-card{background:#0c2232;border:1px solid rgba(255,255,255,.11);box-shadow:0 12px 34px rgba(0,0,0,.2)}
+.evidence-card:hover{border-color:rgba(84,183,44,.62);box-shadow:0 20px 50px rgba(0,0,0,.32),0 0 0 1px rgba(84,183,44,.12)}
+.evidence-photo{background:linear-gradient(135deg,#16384a,#0a1e2d)}
+.photo-placeholder{color:#9db1bd}
+.photo-placeholder strong{color:#7fd660}
+.evidence-chip{background:rgba(6,24,39,.9);border:1px solid rgba(84,183,44,.45);color:#c7ffb4}
+.evidence-body{background:linear-gradient(180deg,#0d2536,#0a2030)}
+.evidence-body h4{color:#fff}
+.evidence-body p{color:#9fb4c2}
+.evidence-link{color:#7ed7ff}
+
+/* Lightbox stays dark to match the Leadership page */
+.lightbox-shell{background:#0b2232;color:#fff;border:1px solid rgba(255,255,255,.12)}
+.lightbox-image{background:#071827}
+.lightbox-placeholder{color:#9fb4c2}
+.lightbox-content h3{color:#fff}
+.lightbox-content p{color:#a9bfd0}
+.lightbox-nav .prev{background:#173246;color:#d9e6ee;border:1px solid rgba(255,255,255,.1)}
+.lightbox-nav .next{background:var(--forge-green);color:#071827}
+
+/* Subtle transition when changing 5S pillars */
+.audit-panel.active{animation:auditFade .38s ease}
+@keyframes auditFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+
+
+
+
+
+.forge-behaviour-wrap{max-width:1180px;margin:auto;padding:28px 34px 60px}
+.forge-behaviour-eyebrow{font-size:12px;font-weight:900;letter-spacing:4px;color:var(--forge-green)}
+
+.forge-behaviour-intro{color:#8edcff;line-height:1.7;max-width:800px;margin-bottom:36px}
+.behaviour-nav{display:grid;grid-template-columns:1fr 90px 1fr 90px 1fr;align-items:center;margin-bottom:24px}
+.behaviour-step{border:1px solid #294355;background:#0b2232;border-radius:18px;padding:18px;cursor:pointer;transition:.3s;min-height:94px}
+.behaviour-step:hover,.behaviour-step.active{transform:translateY(-4px);border-color:var(--forge-green);box-shadow:0 0 0 1px rgba(101,255,77,.15),0 14px 40px rgba(0,0,0,.22)}
+.behaviour-step small{display:block;color:var(--forge-green);font-weight:900;letter-spacing:2px;margin-bottom:7px}
+.behaviour-step strong{font-size:18px}
+.behaviour-connector{height:2px;background:#294355;position:relative;overflow:hidden}
+.behaviour-connector:after{content:"";position:absolute;inset:0;background:var(--forge-green);transform:translateX(-100%);animation:pulse 2.2s infinite}
+@keyframes pulse{50%{transform:translateX(100%)}100%{transform:translateX(100%)}}
+.behaviour-stage{position:relative;overflow:hidden;border:1px solid #294355;border-radius:24px;background:linear-gradient(135deg,#10293a,#091f2e);min-height:380px}
+.behaviour-content{display:none;grid-template-columns:42% 58%;min-height:380px;animation:enter .45s ease}
+.behaviour-content.active{display:grid}
+@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.behaviour-visual{position:relative;min-height:380px;background:linear-gradient(145deg,#17394d,#071a27);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.behaviour-visual:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(101,255,77,.28);border-radius:50%}
+.behaviour-visual:after{content:"";position:absolute;width:200px;height:200px;border:1px dashed rgba(142,220,255,.35);border-radius:50%;animation:spin 18s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.behaviour-icon{font-size:82px;z-index:2;filter:grayscale(.2)}
+.behaviour-photo-note{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(3,15,24,.78);padding:12px 14px;border-radius:12px;color:#cbeeff;font-size:13px;z-index:3}
+.behaviour-details{padding:42px}
+.behaviour-num{font-size:13px;color:var(--forge-green);font-weight:900;letter-spacing:3px}
+.behaviour-details h2{font-size:31px;margin:10px 0 8px}
+.behaviour-sub{color:var(--forge-yellow);font-weight:800;line-height:1.5}
+.behaviour-desc{color:#cbe5f4;line-height:1.75;margin:20px 0}
+.behaviour-rule{height:1px;background:#294355;margin:22px 0}
+.behaviour-label{font-weight:800;color:#c7d1d8;margin-bottom:10px}
+.behaviour-demo{color:#9db0bd;line-height:1.8}
+.behaviour-tag{display:inline-block;margin-top:22px;border:1px solid rgba(101,255,77,.4);color:#a6df94;border-radius:99px;padding:8px 13px;font-size:12px;font-weight:900}
+.behaviour-hint{text-align:center;color:#718997;font-size:12px;margin-top:14px}
+.behaviour-challenge{margin-top:26px;text-align:center}
+.behaviour-challenge button{border:1px solid var(--forge-green);background:transparent;color:var(--forge-green);font-weight:900;letter-spacing:1px;border-radius:999px;padding:13px 20px;cursor:pointer;transition:.25s}
+.behaviour-challenge button:hover{background:var(--forge-green);color:#061b2a;box-shadow:0 0 28px rgba(101,255,77,.25)}
+@media(max-width:800px){
+ .behaviour-nav{grid-template-columns:1fr;gap:10px}.behaviour-connector{display:none}
+ .behaviour-content.active{grid-template-columns:1fr}.behaviour-visual{min-height:250px}.behaviour-details{padding:28px}
+}
+
+
+/* ===== INTERACTIVE LEADERSHIP BEHAVIOURS ===== */
+.forge-behaviour-wrap{max-width:none;margin:0;padding:0}
+.forge-behaviour-eyebrow{font-size:.78rem;font-weight:900;letter-spacing:.16em;color:var(--forge-green)}
+.forge-behaviour-intro{color:#abc0cf;line-height:1.7;max-width:800px;margin:0 0 36px}
+.behaviour-step{font-family:inherit;color:#fff}
+.behaviour-step strong{display:block}
+.behaviour-stage{box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.behaviour-content{color:#fff}
+.behaviour-details h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.08;margin:10px 0 8px;color:#fff}
+.behaviour-challenge a{
+ display:inline-block;border:1px solid var(--forge-green);background:transparent;color:var(--forge-green);
+ font-weight:900;letter-spacing:1px;border-radius:999px;padding:13px 20px;text-decoration:none;transition:.25s
+}
+.behaviour-challenge a:hover{
+ background:var(--forge-green);color:#061b2a;box-shadow:0 0 28px rgba(84,183,44,.25)
+}
+html{scroll-behavior:smooth}
+
+
+/* ===== INTERACTIVE OWNERSHIP JOURNEY ===== */
+.ownership-grid{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:26px;
+  align-items:stretch;
+}
+.ownership-content{
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+}
+.ownership-content .forge-heading{
+  margin-bottom:26px;
+}
+.ownership-actions{
+  flex:1;
+  display:grid;
+  grid-template-rows:repeat(4,1fr);
+  gap:11px;
+}
+.ownership-action{
+  width:100%;
+  appearance:none;
+  font-family:inherit;
+  color:#fff;
+  text-align:left;
+  cursor:pointer;
+  grid-template-columns:52px 1fr 24px;
+  min-height:76px;
+  transition:.28s ease;
+}
+.ownership-action b{
+  transition:.28s ease;
+}
+.ownership-action small{
+  color:#d1deE7;
+  font-size:.78rem;
+  line-height:1.45;
+}
+.ownership-arrow{
+  font-size:1.2rem;
+  color:#728c9d;
+  opacity:0;
+  transform:translateX(-6px);
+  transition:.28s ease;
+}
+.ownership-action:hover,
+.ownership-action.active{
+  transform:translateX(6px);
+  border-color:rgba(84,183,44,.68);
+  background:linear-gradient(100deg,rgba(84,183,44,.16),rgba(255,255,255,.055));
+  box-shadow:0 12px 32px rgba(0,0,0,.16);
+}
+.ownership-action.active b{
+  box-shadow:0 0 0 6px rgba(84,183,44,.12);
+}
+.ownership-action:hover .ownership-arrow,
+.ownership-action.active .ownership-arrow{
+  opacity:1;
+  transform:none;
+  color:var(--forge-green);
+}
+
+.ownership-visual{
+  position:relative;
+  min-height:0;
+  height:100%;
+  padding:0;
+  overflow:hidden;
+  isolation:isolate;
+  background:#0b2232;
+}
+.ownership-visual:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:
+    linear-gradient(180deg,transparent 42%,rgba(5,18,29,.18) 58%,rgba(5,18,29,.92) 100%);
+  pointer-events:none;
+}
+.ownership-visual img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:opacity .25s ease,transform .55s ease;
+}
+.ownership-visual.image-changing img{
+  opacity:.15;
+  transform:scale(1.035);
+}
+.ownership-image-fallback{
+  position:absolute;
+  inset:0;
+  display:none;
+  place-items:center;
+  text-align:center;
+  padding:34px;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(84,183,44,.12),transparent 30%),
+    linear-gradient(135deg,#12352f,#0a2638);
+  color:#9fb6c5;
+}
+.ownership-image-fallback span{
+  display:block;
+  font-size:5rem;
+  line-height:1;
+  font-weight:950;
+  color:rgba(255,255,255,.07);
+}
+.ownership-image-fallback strong{
+  display:block;
+  margin-top:12px;
+  color:#fff;
+  letter-spacing:.08em;
+}
+.ownership-image-fallback small{
+  display:block;
+  margin-top:8px;
+  color:#85a2b4;
+}
+.ownership-photo-caption{
+  position:absolute;
+  z-index:3;
+  left:24px;
+  right:24px;
+  bottom:22px;
+  padding:17px 18px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+  background:rgba(5,18,29,.78);
+  backdrop-filter:blur(12px);
+}
+.ownership-caption-step{
+  color:var(--forge-green);
+  font-size:.7rem;
+  letter-spacing:.16em;
+  font-weight:950;
+  margin-bottom:5px;
+}
+.ownership-photo-caption strong{
+  display:block;
+  font-size:1.05rem;
+  color:#fff;
+}
+.ownership-photo-caption span{
+  display:block;
+  margin-top:4px;
+  color:#caD9e3;
+  font-size:.84rem;
+}
+
+@media(max-width:900px){
+ .ownership-grid{grid-template-columns:1fr}
+ .ownership-visual{min-height:420px}
+ .ownership-actions{grid-template-rows:none}
+}
+
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span>TEAM</span><strong>SEPC</strong></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="leadership.html" class="active">Leadership</a><a href="team.html">Our Team</a><a href="projects.html">Projects & Impact</a><a href="gallery.html">Gallery</a><div class="nav-dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Shortcuts <span>⌄</span></button><div class="dropdown-menu"><a href="#" onclick="return false;"><span>01</span> SEPC Portal <small>Coming soon</small></a><a href="#" onclick="return false;"><span>02</span> Daily Dashboard <small>Coming soon</small></a><a href="#" onclick="return false;"><span>03</span> Improvement Tracker <small>Coming soon</small></a><a href="#" onclick="return false;"><span>04</span> Training Hub <small>Coming soon</small></a><a href="#" onclick="return false;"><span>05</span> Shared Resources <small>Coming soon</small></a></div></div></nav></div></header>
+
+<main>
+<section class="forge-hero">
+ <div class="container">
+  <div class="forge-kicker">TEAM SEPC · LEADERSHIP</div>
+  <h1 class="forge-title"><span>Forge the Future</span></h1>
+  <div class="forge-subtitle">DRIVING 5S EXCELLENCE</div>
+  <p class="forge-lead">Building a sustainable 5S culture through proactive leadership, future-ready skills and a mindset that continuously adapts to better standards and best practices.</p>
+  <div class="forge-score">
+   <div class="score-chip"><strong>01</strong> Proactive Leadership & Initiative</div>
+   <div class="score-chip"><strong>02</strong> Future-Ready Leader Skill</div>
+   <div class="score-chip"><strong>03</strong> Future-Ready Mindset</div>
+  </div>
+ </div>
+</section>
+
+
+<section class="forge-section" id="leadership-behaviours">
+ <div class="container">
+  <div class="forge-heading">
+   <div class="mini">THE LEADERSHIP FORGE</div>
+   <h2>Three behaviours that shape our future.</h2>
+   <p>For SEPC, 5S excellence is sustained by people. Explore the three Forge the Future behaviours that turn leadership into daily action.</p>
+  </div>
+
+  <div class="forge-behaviour-wrap">
+   <div class="behaviour-nav">
+    <div class="behaviour-step active" data-target="behaviour-one" tabindex="0" role="button" aria-label="Show Proactive Leadership">
+     <small>01 · INITIATE</small><strong>Proactive Leadership</strong>
+    </div>
+    <div class="behaviour-connector"></div>
+    <div class="behaviour-step" data-target="behaviour-two" tabindex="0" role="button" aria-label="Show Lead by Example">
+     <small>02 · LEAD</small><strong>Lead by Example</strong>
+    </div>
+    <div class="behaviour-connector"></div>
+    <div class="behaviour-step" data-target="behaviour-three" tabindex="0" role="button" aria-label="Show Future-Ready Mindset">
+     <small>03 · ADAPT</small><strong>Future-Ready Mindset</strong>
+    </div>
+   </div>
+
+   <div class="behaviour-stage">
+    <div class="behaviour-content active" id="behaviour-one">
+     <div class="behaviour-visual">
+      <div class="behaviour-icon">⚡</div>
+      <div class="behaviour-photo-note">Actual SEPC practice photo can be placed here</div>
+     </div>
+     <div class="behaviour-details">
+      <div class="behaviour-num">BEHAVIOUR 01</div>
+      <h2>Proactive Leadership & Initiative</h2>
+      <div class="behaviour-sub">Promotes Sustainability & Encourages Team Participation</div>
+      <p class="behaviour-desc">We take initiative before problems become habits and involve the team so improvements can continue beyond a single activity or audit.</p>
+      <div class="behaviour-rule"></div>
+      <div class="behaviour-label">How we demonstrate it</div>
+      <div class="behaviour-demo">Team participation · Improvement ownership · Follow-up · Sustainable practice</div>
+      <span class="behaviour-tag">INITIATE · INVOLVE · SUSTAIN</span>
+     </div>
+    </div>
+
+    <div class="behaviour-content" id="behaviour-two">
+     <div class="behaviour-visual">
+      <div class="behaviour-icon">🧭</div>
+      <div class="behaviour-photo-note">Example: leader coaching / performing 5S together with the team</div>
+     </div>
+     <div class="behaviour-details">
+      <div class="behaviour-num">BEHAVIOUR 02</div>
+      <h2>Future-Ready Leader Skill</h2>
+      <div class="behaviour-sub">Leads by Example in Maintaining 5S Discipline</div>
+      <p class="behaviour-desc">Leadership is visible in daily behaviour. We maintain the same 5S discipline we expect from the team and guide others through action.</p>
+      <div class="behaviour-rule"></div>
+      <div class="behaviour-label">How we demonstrate it</div>
+      <div class="behaviour-demo">Role modelling · Coaching · Workplace discipline · Consistent standards</div>
+      <span class="behaviour-tag">LEAD · COACH · PRACTISE</span>
+     </div>
+    </div>
+
+    <div class="behaviour-content" id="behaviour-three">
+     <div class="behaviour-visual">
+      <div class="behaviour-icon">↗</div>
+      <div class="behaviour-photo-note">Example: before/after improvement or adoption of a new 5S standard</div>
+     </div>
+     <div class="behaviour-details">
+      <div class="behaviour-num">BEHAVIOUR 03</div>
+      <h2>Future-Ready Mindset</h2>
+      <div class="behaviour-sub">Adaptability to New Standards & Best Practices</div>
+      <p class="behaviour-desc">We stay open to better methods, new standards and practical ideas that make the workplace safer, clearer and more effective.</p>
+      <div class="behaviour-rule"></div>
+      <div class="behaviour-label">How we demonstrate it</div>
+      <div class="behaviour-demo">Adaptability · New ideas · Standard improvement · Continuous learning</div>
+      <span class="behaviour-tag">ADAPT · IMPROVE · EVOLVE</span>
+     </div>
+    </div>
+   </div>
+
+   <div class="behaviour-hint">Hover or click each Forge stage to explore the behaviour.</div>
+   <div class="behaviour-challenge"><a href="#forge-challenge">TAKE THE FORGE CHALLENGE →</a></div>
+  </div>
+ </div>
+</section>
+
+
+<section class="forge-section alt">
+ <div class="container">
+  <div class="forge-heading"><div class="mini">5S IN PRACTICE</div><h2>Leadership connected to the workplace.</h2><p>Select each 5S pillar to see the official checklist focus used for the office audit.</p></div>
+  <div class="audit-map">
+   <div class="audit-nav">
+    <button class="audit-btn active" data-panel="sort">SORT</button>
+    <button class="audit-btn" data-panel="order">SET IN ORDER</button>
+    <button class="audit-btn" data-panel="shine">SHINE</button>
+    <button class="audit-btn" data-panel="standardize">STANDARDIZE</button>
+    <button class="audit-btn" data-panel="sustain">SUSTAIN</button>
+   </div>
+   <div>
+    <div class="audit-panel active" id="sort"><h3>Sort <small>(Organise)</small></h3><p class="panel-intro">See how SEPC applies sorting, clear aisles and hazard prevention in the actual workplace.</p><div class="audit-items"><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="sort" data-title="Sort & Discard Items" data-image="images/5s/sort-discard-01.jpg" data-desc="Unnecessary items are identified and removed to keep the workplace focused and organised.">
+<div class="evidence-photo"><img src="images/5s/sort-discard-01.jpg" alt="Sort & Discard Items" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/sort-discard-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Sort & Discard Items</h4><p>Unnecessary items are identified and removed to keep the workplace focused and organised.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="sort" data-title="No Block of Aisles" data-image="images/5s/aisle-01.jpg" data-desc="Walkways and access paths are kept clear to support safe, efficient movement.">
+<div class="evidence-photo"><img src="images/5s/aisle-01.jpg" alt="No Block of Aisles" onerror="this.style.display='none'"><div class="photo-placeholder"><div></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>No Block of Aisles</h4><p>Walkways and access paths are kept clear to support safe, efficient movement.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="sort" data-title="No Safety Hazard" data-image="images/5s/safety-01.jpg" data-desc="Potential hazards are identified and corrected before they become risks.">
+<div class="evidence-photo"><img src="images/5s/safety-01.jpg" alt="No Safety Hazard" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/safety-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>No Safety Hazard</h4><p>Potential hazards are identified and corrected before they become risks.</p><span class="evidence-link">View Evidence →</span></div></article></div></div></div>
+<div class="audit-panel" id="order"><h3>Set in Order <small>(Orderliness)</small></h3><p class="panel-intro">Actual visual-management practices used to identify, label and organise workplace items.</p><div class="audit-items"><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="order" data-title="Items Locations are Well Identified" data-image="images/5s/item-location-01.jpg" data-desc="Workplace items have defined locations so users know exactly where they belong.">
+<div class="evidence-photo"><img src="images/5s/item-location-01.jpg" alt="Items Locations are Well Identified" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/item-location-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Items Locations are Well Identified</h4><p>Workplace items have defined locations so users know exactly where they belong.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="order" data-title="Items are Labelled & Easily Accessible" data-image="images/5s/labelled-accessible-01.jpg" data-desc="Clear labels and accessible placement reduce searching time and confusion.">
+<div class="evidence-photo"><img src="images/5s/labelled-accessible-01.jpg" alt="Items are Labelled & Easily Accessible" onerror="this.style.display='none'"><div class="photo-placeholder"><div></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Items are Labelled & Easily Accessible</h4><p>Clear labels and accessible placement reduce searching time and confusion.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="order" data-title="Labelled Creativity & Conditions" data-image="images/5s/label-creativity-01.jpg" data-desc="Visual identification is applied creatively while keeping conditions clear and practical.">
+<div class="evidence-photo"><img src="images/5s/label-creativity-01.jpg" alt="Labelled Creativity & Conditions" onerror="this.style.display='none'"><div class="photo-placeholder"><div></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Labelled Creativity & Conditions</h4><p>Visual identification is applied creatively while keeping conditions clear and practical.</p><span class="evidence-link">View Evidence →</span></div></article></div></div></div>
+<div class="audit-panel" id="shine"><h3>Shine <small>(Cleanliness)</small></h3><p class="panel-intro">Examples of workplace cleanliness, waste control and cleaning-tool management.</p><div class="audit-items"><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="shine" data-title="Workplace Cleanliness" data-image="images/5s/cleanliness-01.jpg" data-desc="Work areas are maintained clean and ready for daily operation.">
+<div class="evidence-photo"><img src="images/5s/cleanliness-01.jpg" alt="Workplace Cleanliness" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/cleanliness-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Workplace Cleanliness</h4><p>Work areas are maintained clean and ready for daily operation.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="shine" data-title="Waste & Recycle Management" data-image="images/5s/recycle-01.jpg" data-desc="Waste is segregated and managed in the correct disposal or recycling points.">
+<div class="evidence-photo"><img src="images/5s/recycle-01.jpg" alt="Waste & Recycle Management" onerror="this.style.display='none'"><div class="photo-placeholder"><div></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Waste & Recycle Management</h4><p>Waste is segregated and managed in the correct disposal or recycling points.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="shine" data-title="Cleaning Tools Management" data-image="images/5s/cleaning-tools-01.jpg" data-desc="Cleaning tools are clearly located, maintained and returned after use.">
+<div class="evidence-photo"><img src="images/5s/cleaning-tools-01.jpg" alt="Cleaning Tools Management" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/cleaning-tools-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Cleaning Tools Management</h4><p>Cleaning tools are clearly located, maintained and returned after use.</p><span class="evidence-link">View Evidence →</span></div></article></div></div></div>
+<div class="audit-panel" id="standardize"><h3>Standardize <small>(Adherence)</small></h3><p class="panel-intro">Evidence of visible rules, schedules and consistent stock-management practices.</p><div class="audit-items"><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="standardize" data-title="Visible 5S Rules" data-image="images/5s/visible-rules-01.jpg" data-desc="5S expectations are displayed clearly so standards are easy to understand and follow.">
+<div class="evidence-photo"><img src="images/5s/visible-rules-01.jpg" alt="Visible 5S Rules" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/visible-rules-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Visible 5S Rules</h4><p>5S expectations are displayed clearly so standards are easy to understand and follow.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="standardize" data-title="5S Schedule Creativity & Visibility" data-image="images/5s/schedule-01.jpg" data-desc="Schedules and responsibilities are made visible so participation stays consistent.">
+<div class="evidence-photo"><img src="images/5s/schedule-01.jpg" alt="5S Schedule Creativity & Visibility" onerror="this.style.display='none'"><div class="photo-placeholder"><div></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>5S Schedule Creativity & Visibility</h4><p>Schedules and responsibilities are made visible so participation stays consistent.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="standardize" data-title="Stock Management" data-image="images/5s/stock-management-01.jpg" data-desc="Stock is controlled with clear quantity, location and replenishment practices.">
+<div class="evidence-photo"><img src="images/5s/stock-management-01.jpg" alt="Stock Management" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/stock-management-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>Stock Management</h4><p>Stock is controlled with clear quantity, location and replenishment practices.</p><span class="evidence-link">View Evidence →</span></div></article></div></div></div>
+<div class="audit-panel" id="sustain"><h3>Sustain <small>(Self-discipline)</small></h3><p class="panel-intro">Examples showing how SEPC builds 5S knowledge, awareness and ownership.</p><div class="audit-items"><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="sustain" data-title="5S Education & Training" data-image="images/5s/education-training-01.jpg" data-desc="Training helps team members understand the standard and the purpose behind it.">
+<div class="evidence-photo"><img src="images/5s/education-training-01.jpg" alt="5S Education & Training" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/education-training-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>5S Education & Training</h4><p>Training helps team members understand the standard and the purpose behind it.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="sustain" data-title="5S Awareness" data-image="images/5s/awareness-01.jpg" data-desc="Regular communication keeps 5S visible in daily work, not only during audit periods.">
+<div class="evidence-photo"><img src="images/5s/awareness-01.jpg" alt="5S Awareness" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/awareness-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>5S Awareness</h4><p>Regular communication keeps 5S visible in daily work, not only during audit periods.</p><span class="evidence-link">View Evidence →</span></div></article></div><div class="audit-item"><article class="evidence-card" tabindex="0" role="button" data-category="sustain" data-title="5S Ownership" data-image="images/5s/ownership-01.jpg" data-desc="Team members take responsibility for sustaining workplace standards and improvements.">
+<div class="evidence-photo"><img src="images/5s/ownership-01.jpg" alt="5S Ownership" onerror="this.style.display='none'"><div class="photo-placeholder"><div><span>📷</span><strong>ADD ACTUAL SEPC PHOTO</strong><small>images/5s/ownership-01.jpg</small></div></div><div class="evidence-chip">SEPC ACTUAL PRACTICE</div></div>
+<div class="evidence-body"><h4>5S Ownership</h4><p>Team members take responsibility for sustaining workplace standards and improvements.</p><span class="evidence-link">View Evidence →</span></div></article></div></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+
+<section class="forge-section ownership-section" id="ownership-journey">
+ <div class="container">
+  <div class="story-strip ownership-grid">
+
+   <div class="story-visual ownership-visual" id="ownershipVisual">
+    <img id="ownershipImage" src="images/leadership/see-standard.jpg" alt="See the Standard">
+    <div class="ownership-image-fallback" id="ownershipFallback">
+      <div>
+        <span>01</span>
+        <strong>SEE THE STANDARD</strong>
+        <small>Add image: images/leadership/see-standard.jpg</small>
+      </div>
+    </div>
+    <div class="ownership-photo-caption">
+      <div class="ownership-caption-step" id="ownershipCaptionStep">STEP 01</div>
+      <strong id="ownershipCaptionTitle">See the Standard</strong>
+      <span id="ownershipCaptionText">Make expectations clear and visible.</span>
+    </div>
+   </div>
+
+   <div class="ownership-content">
+    <div class="forge-heading">
+      <div class="mini">FROM INSTRUCTION TO OWNERSHIP</div>
+      <h2>We make 5S a behaviour, not an event.</h2>
+      <p>Leadership creates the conditions for the team to participate, practise, improve and eventually take ownership.</p>
+    </div>
+
+    <div class="action-list ownership-actions">
+     <button class="action ownership-action active"
+       data-step="01"
+       data-title="See the Standard"
+       data-text="Make expectations clear and visible."
+       data-image="images/leadership/see-standard.jpg">
+       <b>1</b><div><strong>See the Standard</strong><br><small>Make expectations clear and visible.</small></div>
+       <span class="ownership-arrow">→</span>
+     </button>
+
+     <button class="action ownership-action"
+       data-step="02"
+       data-title="Practise Together"
+       data-text="Leaders participate and guide through real work."
+       data-image="images/leadership/practise-together.jpg">
+       <b>2</b><div><strong>Practise Together</strong><br><small>Leaders participate and guide through real work.</small></div>
+       <span class="ownership-arrow">→</span>
+     </button>
+
+     <button class="action ownership-action"
+       data-step="03"
+       data-title="Improve the Way"
+       data-text="Encourage ideas and adapt to better practices."
+       data-image="images/leadership/improve-the-way.jpg">
+       <b>3</b><div><strong>Improve the Way</strong><br><small>Encourage ideas and adapt to better practices.</small></div>
+       <span class="ownership-arrow">→</span>
+     </button>
+
+     <button class="action ownership-action"
+       data-step="04"
+       data-title="Own the Result"
+       data-text="Build responsibility that continues without constant instruction."
+       data-image="images/leadership/own-the-result.jpg">
+       <b>4</b><div><strong>Own the Result</strong><br><small>Build responsibility that continues without constant instruction.</small></div>
+       <span class="ownership-arrow">→</span>
+     </button>
+    </div>
+   </div>
+
+  </div>
+ </div>
+</section>
+
+
+
+<section class="forge-section" id="forge-challenge">
+ <div class="container">
+  <div class="forge-heading">
+   <div class="mini">INTERACTIVE 5S EXPERIENCE</div>
+   <h2>Think you can lead the floor?</h2>
+   <p>Try the SEPC 5S mini challenges. Every station is based on the same office audit focus — Sort, Set in Order, Shine, Standardize and Sustain.</p>
+  </div>
+
+  <div class="game-shell">
+   <div class="game-top">
+    <div class="game-title"><h3>⚒️ Forge the Future Challenge</h3><p>Complete all five stations and build your 5S Leadership Score.</p></div>
+    <div class="forge-meter">
+     <div class="forge-meter-top"><span>FORGE METER</span><span id="forgeScore">0 / 25</span></div>
+     <div class="meter-track"><div class="meter-fill" id="forgeMeter"></div></div>
+    </div>
+   </div>
+
+   <div class="game-tabs">
+    <button class="game-tab active" data-game="g-sort">01 SORT</button>
+    <button class="game-tab" data-game="g-order">02 SET IN ORDER</button>
+    <button class="game-tab" data-game="g-shine">03 SHINE</button>
+    <button class="game-tab" data-game="g-standard">04 STANDARDIZE</button>
+    <button class="game-tab" data-game="g-sustain">05 SUSTAIN</button>
+   </div>
+
+   <div class="game-stage active" id="g-sort">
+    <div class="challenge-head"><div><h4>Sort It Out</h4><p>Drag each item into <b>KEEP</b> or <b>DISCARD</b>. The aim: keep only what is needed and remove unnecessary items.</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <div class="sort-board">
+     <div class="item-bank" id="sortBank"><h5>ITEMS</h5>
+      <div class="draggable" draggable="true" data-answer="keep">Current Daily Checklist</div>
+      <div class="draggable" draggable="true" data-answer="discard">Broken Empty File Holder</div>
+      <div class="draggable" draggable="true" data-answer="keep">Frequently Used Label Printer</div>
+      <div class="draggable" draggable="true" data-answer="discard">Obsolete Printed Form</div>
+      <div class="draggable" draggable="true" data-answer="keep">Cleaning Tool in Use</div>
+     </div>
+     <div class="drop-zone zone-keep" data-zone="keep"><h5>✓ KEEP</h5></div>
+     <div class="drop-zone zone-discard" data-zone="discard"><h5>✕ DISCARD</h5></div>
+    </div>
+    <div class="game-actions"><button class="game-btn" id="checkSort">Check Sorting</button><button class="game-btn secondary" id="resetSort">Reset</button></div>
+    <div class="game-feedback" id="sortFeedback"></div>
+   </div>
+
+   <div class="game-stage" id="g-order">
+    <div class="challenge-head"><div><h4>Set in Order: Match the Label</h4><p>Match each workplace item with the best identification method so locations are clear, labelled and easily accessible.</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <div class="match-grid">
+     <div class="match-col">
+      <button class="match-card" data-pair="A" data-side="left">Shared Stationery</button>
+      <button class="match-card" data-pair="B" data-side="left">Mobile Cabinet</button>
+      <button class="match-card" data-pair="C" data-side="left">Cleaning Tools</button>
+     </div>
+     <div class="match-col">
+      <button class="match-card" data-pair="C" data-side="right">Visual tool location / shadow marking</button>
+      <button class="match-card" data-pair="A" data-side="right">Clearly named common-use location</button>
+      <button class="match-card" data-pair="B" data-side="right">Cabinet identification + assigned position</button>
+     </div>
+    </div>
+    <div class="game-feedback" id="matchFeedback"></div>
+    <div class="game-actions"><button class="game-btn secondary" id="resetMatch">Reset</button></div>
+   </div>
+
+   <div class="game-stage" id="g-shine">
+    <div class="challenge-head"><div><h4>Spot the 3 Problems</h4><p>Find all three issues in this simplified office scene. Think cleanliness, waste management and safe access.</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <div class="hazard-scene">
+     <div class="desk d1"></div><div class="desk d2"></div><div class="desk d3"></div>
+     <button class="hazard h1" data-hazard="Spill / cleanliness issue" aria-label="Spill">💧</button>
+     <button class="hazard h2" data-hazard="Waste left outside proper disposal point" aria-label="Waste">📦</button>
+     <button class="hazard h3" data-hazard="Aisle obstruction / loose item" aria-label="Aisle obstruction">🧹</button>
+    </div>
+    <div class="hazard-counter" id="hazardCounter">0 / 3 issues found</div>
+    <div class="game-feedback" id="hazardFeedback"></div>
+    <div class="game-actions"><button class="game-btn secondary" id="resetHazard">Reset</button></div>
+   </div>
+
+   <div class="game-stage" id="g-standard">
+    <div class="challenge-head"><div><h4>Choose the Better Standard</h4><p>A new 5S schedule has been introduced. Which response best supports visible rules, schedule visibility and stock management?</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <div class="scenario-card">
+     <h5>Scenario</h5>
+     <p>The team keeps missing weekly 5S checks because the schedule is only stored in one person's laptop.</p>
+     <div class="scenario-options">
+      <button class="scenario-btn" data-good="0">Keep the current file and remind people verbally.</button>
+      <button class="scenario-btn" data-good="1">Create a visible shared schedule with owner, frequency and status.</button>
+      <button class="scenario-btn" data-good="0">Wait until the audit week, then update everything together.</button>
+     </div>
+    </div>
+    <div class="game-feedback" id="standardFeedback"></div>
+   </div>
+
+   <div class="game-stage" id="g-sustain">
+    <div class="challenge-head"><div><h4>Leadership Decision</h4><p>Your team knows 5S, but participation is dropping. What should a future-ready leader do?</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <div class="scenario-card">
+     <h5>Scenario</h5>
+     <p>Only the same two people are doing most of the 5S activity every week.</p>
+     <div class="scenario-options sustain-options">
+      <button class="scenario-btn" data-good="0">Let them continue because they are already efficient.</button>
+      <button class="scenario-btn" data-good="1">Rotate ownership, coach the team and recognise improvement ideas.</button>
+      <button class="scenario-btn" data-good="0">Do the activity yourself so it can finish faster.</button>
+     </div>
+    </div>
+    <div class="game-feedback" id="sustainFeedback"></div>
+   </div>
+
+   <div class="game-complete" id="gameComplete">
+    <div class="forge-stamp">5S<br>READY</div>
+    <strong id="finalScore">25 / 25</strong>
+    <h3>You forged a future-ready 5S mindset.</h3>
+    <p id="finalMessage">Leadership is not only knowing the standard — it is helping the team sustain it.</p>
+    <button class="game-btn secondary" id="resetAll">Play Again</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="forge-close">
+ <div class="container">
+  <div class="forge-kicker">OUR COMMITMENT</div>
+  <h2>5S creates the environment.<br><span>Leadership creates the culture.</span></h2>
+  <div class="line"></div>
+  <p>By taking initiative, leading by example and continuously adapting to better practices, TEAM SEPC is building the discipline and ownership needed for tomorrow.</p>
+  <h3>FORGE THE FUTURE · DRIVE 5S EXCELLENCE</h3>
+ </div>
+</section>
+</main>
+
+
+<div class="evidence-lightbox" id="evidenceLightbox" aria-hidden="true">
+<button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+<div class="lightbox-shell">
+<div class="lightbox-image"><img id="lightboxImage" src="" alt=""><div class="lightbox-placeholder" id="lightboxPlaceholder"><span>📷</span><strong>Actual SEPC evidence photo will appear here.</strong></div></div>
+<div class="lightbox-content"><div class="lightbox-meta" id="lightboxMeta">5S ACTUAL PRACTICE</div><h3 id="lightboxTitle"></h3><p id="lightboxDesc"></p>
+<div class="lightbox-nav"><button class="prev" id="lightboxPrev">← Previous</button><button class="next" id="lightboxNext">Next Evidence →</button></div></div>
+</div></div>
+
+<footer class="site-footer"><div class="container footer-wrap"><a class="brand" href="index.html"><span>TEAM</span><strong>SEPC</strong></a><p>Forge the Future · Driving 5S Excellence.</p><div class="footer-links"><a href="leadership.html">Leadership</a><a href="team.html">Team</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div><p>© <span data-year></span> TEAM SEPC</p></div></footer>
+<script src="js/script.js"></script>
+<script>
+document.querySelectorAll('.audit-btn').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+  document.querySelectorAll('.audit-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.audit-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(btn.dataset.panel).classList.add('active');
+ });
+});
+</script>
+
+<script>
+(function(){
+ const scores={sort:0,order:0,shine:0,standard:0,sustain:0};
+ const max=25;
+ function refreshScore(){
+   const total=Object.values(scores).reduce((a,b)=>a+b,0);
+   document.getElementById('forgeScore').textContent=total+' / '+max;
+   document.getElementById('forgeMeter').style.width=(total/max*100)+'%';
+   if(Object.values(scores).every(v=>v>0)){
+     const box=document.getElementById('gameComplete');
+     box.classList.add('show');
+     document.getElementById('finalScore').textContent=total+' / '+max;
+     document.getElementById('finalMessage').textContent=
+       total>=23?'Excellent — you are thinking like a 5S leader: visible standards, shared ownership and continuous improvement.'
+       :total>=18?'Strong result — keep building consistency, participation and ownership.'
+       :'Good start — revisit the stations and strengthen the areas that need more discipline.';
+   }
+ }
+ document.querySelectorAll('.game-tab').forEach(btn=>btn.addEventListener('click',()=>{
+   document.querySelectorAll('.game-tab').forEach(b=>b.classList.remove('active'));
+   document.querySelectorAll('.game-stage').forEach(s=>s.classList.remove('active'));
+   btn.classList.add('active'); document.getElementById(btn.dataset.game).classList.add('active');
+ }));
+
+ // SORT
+ let dragged=null;
+ document.querySelectorAll('.draggable').forEach(el=>{
+   el.addEventListener('dragstart',()=>dragged=el);
+ });
+ document.querySelectorAll('.drop-zone,#sortBank').forEach(zone=>{
+   zone.addEventListener('dragover',e=>{e.preventDefault(); if(zone.classList.contains('drop-zone'))zone.classList.add('dragover')});
+   zone.addEventListener('dragleave',()=>zone.classList.remove('dragover'));
+   zone.addEventListener('drop',e=>{e.preventDefault();zone.classList.remove('dragover');if(dragged)zone.appendChild(dragged)});
+ });
+ document.getElementById('checkSort').addEventListener('click',()=>{
+   let correct=0,total=5;
+   document.querySelectorAll('.draggable').forEach(el=>{
+     el.classList.remove('correct','wrong');
+     const parent=el.closest('[data-zone]');
+     if(parent && parent.dataset.zone===el.dataset.answer){correct++;el.classList.add('correct')}
+     else el.classList.add('wrong');
+   });
+   scores.sort=correct; refreshScore();
+   document.getElementById('sortFeedback').textContent=correct===5?'Perfect. Only necessary items remain and unnecessary items are removed.':correct+' / '+total+' correct — check the red items.';
+ });
+ document.getElementById('resetSort').addEventListener('click',()=>{
+   const bank=document.getElementById('sortBank'); document.querySelectorAll('.draggable').forEach(el=>{el.classList.remove('correct','wrong');bank.appendChild(el)});
+   scores.sort=0;document.getElementById('sortFeedback').textContent='';refreshScore();
+ });
+
+ // MATCH
+ let selected=null,matched=0;
+ document.querySelectorAll('.match-card').forEach(card=>card.addEventListener('click',()=>{
+   if(card.classList.contains('matched'))return;
+   if(!selected){selected=card;card.classList.add('selected');return}
+   if(selected.dataset.side===card.dataset.side){selected.classList.remove('selected');selected=card;card.classList.add('selected');return}
+   if(selected.dataset.pair===card.dataset.pair){
+     selected.classList.remove('selected'); selected.classList.add('matched'); card.classList.add('matched'); matched++;
+     document.getElementById('matchFeedback').textContent='Correct match. '+matched+' / 3 completed.';
+     selected=null;
+     if(matched===3){scores.order=5;document.getElementById('matchFeedback').textContent='Excellent. Clear identification makes items easier to find, use and return.';refreshScore();}
+   }else{
+     card.classList.add('selected'); document.getElementById('matchFeedback').textContent='Not the best match — try again.';
+     setTimeout(()=>{card.classList.remove('selected');if(selected)selected.classList.remove('selected');selected=null},550)
+   }
+ }));
+ document.getElementById('resetMatch').addEventListener('click',()=>{
+   matched=0;selected=null;scores.order=0;document.querySelectorAll('.match-card').forEach(c=>c.classList.remove('selected','matched'));document.getElementById('matchFeedback').textContent='';refreshScore();
+ });
+
+ // SHINE
+ let found=0;
+ document.querySelectorAll('.hazard').forEach(h=>h.addEventListener('click',()=>{
+   if(h.classList.contains('found'))return;h.classList.add('found');found++;
+   document.getElementById('hazardCounter').textContent=found+' / 3 issues found';
+   document.getElementById('hazardFeedback').textContent='Found: '+h.dataset.hazard;
+   if(found===3){scores.shine=5;document.getElementById('hazardFeedback').textContent='All found. A clean workplace also means proper waste control and unobstructed access.';refreshScore();}
+ }));
+ document.getElementById('resetHazard').addEventListener('click',()=>{
+   found=0;scores.shine=0;document.querySelectorAll('.hazard').forEach(h=>h.classList.remove('found'));document.getElementById('hazardCounter').textContent='0 / 3 issues found';document.getElementById('hazardFeedback').textContent='';refreshScore();
+ });
+
+ // STANDARD + SUSTAIN
+ function scenario(selector,key,feedbackId){
+   document.querySelectorAll(selector).forEach(btn=>btn.addEventListener('click',()=>{
+     document.querySelectorAll(selector).forEach(b=>b.classList.remove('correct','wrong'));
+     const good=btn.dataset.good==='1';btn.classList.add(good?'correct':'wrong');
+     scores[key]=good?5:1;refreshScore();
+     document.getElementById(feedbackId).textContent=good?'Correct — make the standard visible, shared and sustainable.':'That may solve the moment, but it does not build a sustainable 5S culture.';
+   }));
+ }
+ scenario('#g-standard .scenario-btn','standard','standardFeedback');
+ scenario('#g-sustain .scenario-btn','sustain','sustainFeedback');
+
+ document.getElementById('resetAll').addEventListener('click',()=>location.reload());
+})();
+</script>
+
+
+<script>
+(function(){
+ const cards=[...document.querySelectorAll('.evidence-card')], box=document.getElementById('evidenceLightbox');
+ const img=document.getElementById('lightboxImage'), ph=document.getElementById('lightboxPlaceholder');
+ let current=0;
+ function openCard(i){
+  current=(i+cards.length)%cards.length; const c=cards[current];
+  document.getElementById('lightboxTitle').textContent=c.dataset.title;
+  document.getElementById('lightboxDesc').textContent=c.dataset.desc;
+  document.getElementById('lightboxMeta').textContent=c.dataset.category.toUpperCase()+' · SEPC ACTUAL PRACTICE';
+  img.src=c.dataset.image; img.alt=c.dataset.title; img.style.display='block'; ph.style.display='none';
+  img.onerror=()=>{img.style.display='none';ph.style.display='block'};
+  box.classList.add('open'); document.body.style.overflow='hidden';
+ }
+ function closeBox(){box.classList.remove('open');document.body.style.overflow=''}
+ cards.forEach((c,i)=>{c.onclick=()=>openCard(i);c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCard(i)}}});
+ document.getElementById('lightboxClose').onclick=closeBox;
+ document.getElementById('lightboxPrev').onclick=()=>openCard(current-1);
+ document.getElementById('lightboxNext').onclick=()=>openCard(current+1);
+ box.onclick=e=>{if(e.target===box)closeBox()};
+ document.addEventListener('keydown',e=>{if(!box.classList.contains('open'))return;if(e.key==='Escape')closeBox();if(e.key==='ArrowLeft')openCard(current-1);if(e.key==='ArrowRight')openCard(current+1)});
+})();
+</script>
+
+
+<script>
+(function(){
+ const steps=[...document.querySelectorAll('.behaviour-step')];
+ const contents=[...document.querySelectorAll('.behaviour-content')];
+ function showBehaviour(step){
+  steps.forEach(s=>s.classList.remove('active'));
+  contents.forEach(c=>c.classList.remove('active'));
+  step.classList.add('active');
+  const target=document.getElementById(step.dataset.target);
+  if(target) target.classList.add('active');
+ }
+ steps.forEach(step=>{
+  step.addEventListener('click',()=>showBehaviour(step));
+  step.addEventListener('mouseenter',()=>showBehaviour(step));
+  step.addEventListener('keydown',e=>{
+   if(e.key==='Enter'||e.key===' '){e.preventDefault();showBehaviour(step);}
+  });
+ });
+})();
+</script>
+
+
+<script>
+(function(){
+ const buttons=[...document.querySelectorAll('.ownership-action')];
+ const visual=document.getElementById('ownershipVisual');
+ const image=document.getElementById('ownershipImage');
+ const fallback=document.getElementById('ownershipFallback');
+ const stepEl=document.getElementById('ownershipCaptionStep');
+ const titleEl=document.getElementById('ownershipCaptionTitle');
+ const textEl=document.getElementById('ownershipCaptionText');
+
+ if(!buttons.length || !image) return;
+
+ function updateOwnership(btn){
+   buttons.forEach(b=>b.classList.remove('active'));
+   btn.classList.add('active');
+
+   const step=btn.dataset.step;
+   const title=btn.dataset.title;
+   const text=btn.dataset.text;
+   const src=btn.dataset.image;
+
+   visual.classList.add('image-changing');
+
+   setTimeout(()=>{
+     stepEl.textContent='STEP '+step;
+     titleEl.textContent=title;
+     textEl.textContent=text;
+
+     fallback.innerHTML='<div><span>'+step+'</span><strong>'+title.toUpperCase()+'</strong><small>Add image: '+src+'</small></div>';
+     fallback.style.display='none';
+
+     image.onload=()=>{
+       fallback.style.display='none';
+       image.style.display='block';
+       requestAnimationFrame(()=>visual.classList.remove('image-changing'));
+     };
+     image.onerror=()=>{
+       image.style.display='none';
+       fallback.style.display='grid';
+       visual.classList.remove('image-changing');
+     };
+     image.style.display='block';
+     image.src=src;
+     image.alt=title;
+   },180);
+ }
+
+ buttons.forEach(btn=>btn.addEventListener('click',()=>updateOwnership(btn)));
+
+ // Trigger initial fallback if first image doesn't exist.
+ image.onerror=()=>{
+   image.style.display='none';
+   fallback.style.display='grid';
+ };
+})();
+</script>
+
+</body></html>

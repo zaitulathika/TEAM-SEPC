@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Meet the TEAM SEPC department members">
+  <title>Our Team | TEAM SEPC</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Team page hierarchy layout */
+    .team-group { position: relative; }
+    .team-group + .team-group { border-top: 1px solid rgba(82,232,255,.08); }
+    .team-group .section-heading { margin-bottom: 42px; }
+
+    .team-grid-four {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    /* PC Team: 4 + 4 + 2, with final two centered on desktop */
+    .pc-team-grid .team-card:nth-last-child(2) { grid-column: 2; }
+    .pc-team-grid .team-card:last-child { grid-column: 3; }
+
+    .group-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      color: #59e8ff;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .group-label::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: #59e8ff;
+      box-shadow: 0 0 12px rgba(89,232,255,.55);
+    }
+
+    @media (max-width: 1100px) {
+      .team-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .pc-team-grid .team-card:nth-last-child(2),
+      .pc-team-grid .team-card:last-child { grid-column: auto; }
+    }
+
+    @media (max-width: 650px) {
+      .team-grid-four { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span>TEAM</span><strong>SEPC</strong></a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="team.html" class="active">Our Team</a>
+      <a href="projects.html">Projects &amp; Impact</a>
+      <a href="gallery.html">Gallery</a>
+
+      <div class="nav-dropdown">
+        <button class="dropdown-toggle" type="button" aria-expanded="false">Shortcuts <span>⌄</span></button>
+        <div class="dropdown-menu">
+          <a href="#" onclick="return false;"><span>01</span> SEPC Portal <small>Coming soon</small></a>
+          <a href="#" onclick="return false;"><span>02</span> Daily Dashboard <small>Coming soon</small></a>
+          <a href="#" onclick="return false;"><span>03</span> Improvement Tracker <small>Coming soon</small></a>
+          <a href="#" onclick="return false;"><span>04</span> Training Hub <small>Coming soon</small></a>
+          <a href="#" onclick="return false;"><span>05</span> Shared Resources <small>Coming soon</small></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Our Team</div>
+      <div class="eyebrow">THE PEOPLE BEHIND SEPC</div>
+      <h1>Different roles.<br><span>One leadership culture.</span></h1>
+      <p>Meet the people who lead, support and strengthen TEAM SEPC.</p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 1: MANAGEMENT - 4 CARDS
+  ========================================================== -->
+  <section class="section section-dark team-group">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <div class="group-label">Leadership Direction</div>
+        <h2>SEPC <span>Management</span></h2>
+        <p>Providing direction, developing people and creating the environment for teams to perform at their best.</p>
+      </div>
+
+      <div class="team-grid-four">
+
+        <!-- MANAGEMENT 01 -->
+        <article class="team-card reveal" tabindex="0" aria-label="Management Member 1 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/management-1.jpg" alt="Management Member 1"></div>
+              <div class="team-front-info">
+                <h3>TOH POH KEONG</h3>
+                <p class="role">PRESIDENT / MANAGING DIRECTOR</p>
+                <span class="flip-hint">View profile ↻</span>
+              </div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">01</div>
+              <p class="back-label">SEPC MANAGEMENT</p>
+              <h3>TOH POH KEONG</h3>
+              <p class="role">PRESIDENT / MANAGING DIRECTOR</p>
+              <div class="back-line"></div>
+              <p class="bio">Leads the SEPC team with a focus on people development, operational excellence and continuous improvement. Passionate about building strong teams and empowering people to take ownership.</p>
+              <div class="leadership-tag">Leadership is about empowering others to succeed.</div>
+              <span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- MANAGEMENT 02 -->
+        <article class="team-card reveal" tabindex="0" aria-label="Management Member 2 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/management-2.jpg" alt="Management Member 2"></div>
+              <div class="team-front-info">
+                <h3>NG CHEE SEONG</h3>
+                <p class="role">GENERAL MANAGER - PLANT</p>
+                <span class="flip-hint">View profile ↻</span>
+              </div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">02</div>
+              <p class="back-label">SEPC MANAGEMENT</p>
+              <h3>Management Name 2</h3>
+              <p class="role">Management Role</p>
+              <div class="back-line"></div>
+              <p class="bio">Add a short leadership contribution, responsibility, experience or personal leadership message here.</p>
+              <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+              <span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- MANAGEMENT 03 -->
+        <article class="team-card reveal" tabindex="0" aria-label="Management Member 3 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/management-3.jpg" alt="Management Member 3"></div>
+              <div class="team-front-info">
+                <h3>TOH WEI CHEN</h3>
+                <p class="role">DEPUTY GENERAL MANAGER - PRODUCTION</p>
+                <span class="flip-hint">View profile ↻</span>
+              </div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">03</div>
+              <p class="back-label">SEPC MANAGEMENT</p>
+              <h3>Management Name 3</h3>
+              <p class="role">Management Role</p>
+              <div class="back-line"></div>
+              <p class="bio">Add a short leadership contribution, responsibility, experience or personal leadership message here.</p>
+              <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+              <span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- MANAGEMENT 04 -->
+        <article class="team-card reveal" tabindex="0" aria-label="Management Member 4 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/management-4.jpg" alt="Management Member 4"></div>
+              <div class="team-front-info">
+                <h3>EVONNE TEH</h3>
+                <p class="role">SENIOR MANAGER - IMD</p>
+                <span class="flip-hint">View profile ↻</span>
+              </div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">04</div>
+              <p class="back-label">SEPC MANAGEMENT</p>
+              <h3>EVONNE TEH</h3>
+              <p class="role">SENIOR MANAGER - IMD</p>
+              <div class="back-line"></div>
+              <p class="bio">Two decades in the tyre industry turning data into decisions, bottlenecks into breakthroughs, and paper into history. Driving continuous improvement, digital transformation, and high-performing teams.</p>
+              <div class="leadership-tag">Transforming people, processes, and technology to achieve sustainable manufacturing excellence.</div>
+              <span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 2: SE TEAM - 4 CARDS
+  ========================================================== -->
+  <section class="section team-group">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <div class="group-label">Sustainability Engineering</div>
+        <h2>SE <span>Team</span></h2>
+        <p>Driving sustainable improvement through engineering excellence, teamwork and continuous development.</p>
+      </div>
+
+      <div class="team-grid-four">
+
+        <!-- SE 01 -->
+        <article class="team-card reveal" tabindex="0" aria-label="SE Team Member 1 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/se-1.jpg" alt="SE Team Member 1"></div>
+              <div class="team-front-info"><h3>MOHAMAD RASHID</h3><p class="role">SENIOR MANAGER - SE</p><span class="flip-hint">View profile ↻</span></div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">01</div><p class="back-label">SUSTAINABILITY ENGINEERING</p><h3>SE Member 1</h3><p class="role">Team Role</p><div class="back-line"></div><p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p><div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div><span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SE 02 -->
+        <article class="team-card reveal" tabindex="0" aria-label="SE Team Member 2 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/se-2.jpg" alt="SE Team Member 2"></div>
+              <div class="team-front-info"><h3>RAJA MOHAMED RIZAL</h3><p class="role">ENGINEER - SE</p><span class="flip-hint">View profile ↻</span></div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">02</div><p class="back-label">SUSTAINABILITY ENGINEERING</p><h3>SE Member 2</h3><p class="role">Team Role</p><div class="back-line"></div><p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p><div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div><span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SE 03 -->
+        <article class="team-card reveal" tabindex="0" aria-label="SE Team Member 3 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/se-3.jpg" alt="SE Team Member 3"></div>
+              <div class="team-front-info"><h3>NURUL SYAFIKA</h3><p class="role">ENGINEER - SE</p><span class="flip-hint">View profile ↻</span></div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">03</div><p class="back-label">SUSTAINABILITY ENGINEERING</p><h3>SE Member 3</h3><p class="role">Team Role</p><div class="back-line"></div><p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p><div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div><span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SE 04 -->
+        <article class="team-card reveal" tabindex="0" aria-label="SE Team Member 4 profile">
+          <div class="team-card-inner">
+            <div class="team-card-face team-card-front">
+              <div class="member-photo"><img src="images/team/se-4.jpg" alt="SE Team Member 4"></div>
+              <div class="team-front-info"><h3>MUHAMMAD FAIZ</h3><p class="role">ENGINEER - SE</p><span class="flip-hint">View profile ↻</span></div>
+            </div>
+            <div class="team-card-face team-card-back">
+              <div class="back-number">04</div><p class="back-label">SUSTAINABILITY ENGINEERING</p><h3>SE Member 4</h3><p class="role">Team Role</p><div class="back-line"></div><p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p><div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div><span class="flip-hint">Back to photo ↻</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 3: PC TEAM - 10 CARDS
+       Desktop: 4 + 4 + 2 centered
+  ========================================================== -->
+  <section class="section section-dark team-group">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <div class="group-label">Production Control</div>
+        <h2>PC <span>Team</span></h2>
+        <p>Turning production demand into clear plans, coordinated schedules and stable operations.</p>
+      </div>
+
+      <div class="team-grid-four pc-team-grid">
+
+        <!-- PC 01 -->
+<article class="team-card reveal" tabindex="0" aria-label="Khor Seong Hock profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-1.jpg" alt="Khor Seong Hock">
+      </div>
+
+      <div class="team-front-info">
+        <h3>KHOR SEONG HOCK</h3>
+        <p class="role">MANAGER - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">01</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>KHOR SEONG HOCK</h3>
+      <p class="role">MANAGER - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 02 -->
+<article class="team-card reveal" tabindex="0" aria-label="Zaitulathika profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-2.jpg" alt="Zaitulathika">
+      </div>
+
+      <div class="team-front-info">
+        <h3>ZAITULATHIKA</h3>
+        <p class="role">EXECUTIVE - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">02</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>ZAITULATHIKA</h3>
+      <p class="role">EXECUTIVE - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 03 -->
+<article class="team-card reveal" tabindex="0" aria-label="Lee Paik Chuan profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-3.jpg" alt="Lee Paik Chuan">
+      </div>
+
+      <div class="team-front-info">
+        <h3>LEE PAIK CHUAN</h3>
+        <p class="role">EXECUTIVE - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">03</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>LEE PAIK CHUAN</h3>
+      <p class="role">EXECUTIVE - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 04 -->
+<article class="team-card reveal" tabindex="0" aria-label="Parthiban profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-4.jpg" alt="Parthiban">
+      </div>
+
+      <div class="team-front-info">
+        <h3>PARTHIBAN</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">04</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>PARTHIBAN</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 05 -->
+<article class="team-card reveal" tabindex="0" aria-label="Muhammad Naim profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-5.jpg" alt="Muhammad Naim">
+      </div>
+
+      <div class="team-front-info">
+        <h3>MUHAMMAD NAIM</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">05</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>MUHAMMAD NAIM</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 06 -->
+<article class="team-card reveal" tabindex="0" aria-label="Nazirul Hazwan profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-6.jpg" alt="Nazirul Hazwan">
+      </div>
+
+      <div class="team-front-info">
+        <h3>NAZIRUL HAZWAN</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">06</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>NAZIRUL HAZWAN</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 07 -->
+<article class="team-card reveal" tabindex="0" aria-label="Muhammad Salehuddin profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-7.jpg" alt="Muhammad Salehuddin">
+      </div>
+
+      <div class="team-front-info">
+        <h3>MUHAMMAD SALEHUDDIN</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">07</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>MUHAMMAD SALEHUDDIN</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 08 -->
+<article class="team-card reveal" tabindex="0" aria-label="Mohamad Adham profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-8.jpg" alt="Mohamad Adham">
+      </div>
+
+      <div class="team-front-info">
+        <h3>MOHAMAD ADHAM</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">08</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>MOHAMAD ADHAM</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 09 -->
+<article class="team-card reveal" tabindex="0" aria-label="Mohamad Aizat profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-9.jpg" alt="Mohamad Aizat">
+      </div>
+
+      <div class="team-front-info">
+        <h3>MOHAMAD AIZAT</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">09</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>MOHAMAD AIZAT</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- PC 10 -->
+<article class="team-card reveal" tabindex="0" aria-label="Wan Hafizul profile">
+  <div class="team-card-inner">
+
+    <div class="team-card-face team-card-front">
+      <div class="member-photo">
+        <img src="images/team/pc-10.jpg" alt="Wan Hafizul">
+      </div>
+
+      <div class="team-front-info">
+        <h3>WAN HAFIZUL</h3>
+        <p class="role">TECHNICIAN - PC</p>
+        <span class="flip-hint">View profile ↻</span>
+      </div>
+    </div>
+
+    <div class="team-card-face team-card-back">
+      <div class="back-number">10</div>
+      <p class="back-label">PRODUCTION CONTROL</p>
+      <h3>WAN HAFIZUL</h3>
+      <p class="role">TECHNICIAN - PC</p>
+      <div class="back-line"></div>
+      <p class="bio">Add responsibility, contribution, expertise or personal leadership message here.</p>
+      <div class="leadership-tag">LEAD • INSPIRE • EMPOWER</div>
+      <span class="flip-hint">Back to photo ↻</span>
+    </div>
+
+  </div>
+</article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <a class="brand" href="index.html"><span>TEAM</span><strong>SEPC</strong></a>
+    <p>Leadership through people, ownership &amp; continuous improvement.</p>
+    <div class="footer-links">
+      <a href="leadership.html">Leadership</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <p>© <span data-year></span> TEAM SEPC</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

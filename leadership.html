@@ -104,14 +104,14 @@ box-shadow:0 30px 90px rgba(0,0,0,.22)}
 .zone-keep h5{color:#a7ee8b}.zone-discard h5{color:#ff8793}
 
 /* Spot hazard */
-.hazard-scene{position:relative;min-height:330px;border-radius:20px;background:
-linear-gradient(rgba(5,18,29,.15),rgba(5,18,29,.3)),
-linear-gradient(135deg,#d9e5eb 0 31%,#c0ccd2 31% 34%,#eaf0f3 34% 100%);overflow:hidden;border:1px solid rgba(255,255,255,.12)}
-.desk{position:absolute;background:#7e929d;border-radius:9px;height:45px;width:165px}
-.d1{left:12%;top:20%}.d2{right:12%;top:24%}.d3{left:38%;bottom:18%}
-.hazard{position:absolute;border:0;background:transparent;font-size:2rem;cursor:pointer;filter:drop-shadow(0 5px 5px rgba(0,0,0,.2));transition:.2s}
-.hazard:hover{transform:scale(1.18)}.hazard.found{opacity:.3;transform:scale(.85)}
-.h1{left:47%;top:12%}.h2{left:25%;bottom:12%}.h3{right:20%;bottom:17%}
+.hazard-scene{position:relative;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:#071827;box-shadow:0 18px 42px rgba(0,0,0,.2)}
+.hazard-scene>img{display:block;width:100%;height:auto}
+.hazard{position:absolute;aspect-ratio:1;border:2px solid transparent;border-radius:50%;background:rgba(255,212,42,0);cursor:pointer;transform:translate(-50%,-50%);transition:.2s;touch-action:manipulation}
+.hazard:hover,.hazard:focus-visible{border-color:rgba(255,212,42,.9);background:rgba(255,212,42,.14);box-shadow:0 0 0 7px rgba(255,212,42,.12);outline:none}
+.hazard.found{border-color:#a7ee8b;background:rgba(84,183,44,.42);box-shadow:0 0 0 7px rgba(84,183,44,.15)}
+.hazard.found:after{content:"✓";display:grid;place-items:center;width:100%;height:100%;color:#fff;font-size:clamp(1rem,2vw,1.8rem);font-weight:950}
+.h1{left:38%;top:81%;width:14%}.h2{left:54%;top:67%;width:10%}.h3{left:52%;top:80%;width:16%}
+.hazard-instruction{margin:0 0 12px;padding:10px 13px;border-radius:12px;background:rgba(10,109,187,.14);border:1px solid rgba(89,173,255,.24);color:#d8edf9;font-weight:800}
 .hazard-counter{margin-top:10px;color:#bed0db;font-weight:800}
 
 /* Label match */
@@ -718,12 +718,13 @@ html{scroll-behavior:smooth}
    </div>
 
    <div class="game-stage" id="g-shine">
-    <div class="challenge-head"><div><h4>Spot the 3 Problems</h4><p>Find all three issues in this simplified office scene. Think cleanliness, waste management and safe access.</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <div class="challenge-head"><div><h4>Find the 3 Workplace Hazards</h4><p>Inspect the actual SEPC office and identify issues involving cleanliness, waste management and safe access.</p></div><div class="points-badge">MAX 5 PTS</div></div>
+    <p class="hazard-instruction">How to play: Click each hazard you can identify in the office photo.</p>
     <div class="hazard-scene">
-     <div class="desk d1"></div><div class="desk d2"></div><div class="desk d3"></div>
-     <button class="hazard h1" data-hazard="Spill / cleanliness issue" aria-label="Spill">💧</button>
-     <button class="hazard h2" data-hazard="Waste left outside proper disposal point" aria-label="Waste">📦</button>
-     <button class="hazard h3" data-hazard="Aisle obstruction / loose item" aria-label="Aisle obstruction">🧹</button>
+     <img src="images/5s/aisle-hazard-game.png" alt="SEPC office scene containing three workplace hazards" loading="lazy">
+     <button class="hazard h1" type="button" data-hazard="Water spill — cleanliness and slip hazard" aria-label="Select the water spill hazard" aria-pressed="false"></button>
+     <button class="hazard h2" type="button" data-hazard="Cardboard box — waste left in the walking aisle" aria-label="Select the cardboard box hazard" aria-pressed="false"></button>
+     <button class="hazard h3" type="button" data-hazard="Mop — cleaning tool obstructing safe access" aria-label="Select the mop obstruction hazard" aria-pressed="false"></button>
     </div>
     <div class="hazard-counter" id="hazardCounter">0 / 3 issues found</div>
     <div class="game-feedback" id="hazardFeedback"></div>
@@ -875,13 +876,13 @@ document.querySelectorAll('.audit-btn').forEach(btn=>{
  // SHINE
  let found=0;
  document.querySelectorAll('.hazard').forEach(h=>h.addEventListener('click',()=>{
-   if(h.classList.contains('found'))return;h.classList.add('found');found++;
+   if(h.classList.contains('found'))return;h.classList.add('found');h.setAttribute('aria-pressed','true');found++;
    document.getElementById('hazardCounter').textContent=found+' / 3 issues found';
    document.getElementById('hazardFeedback').textContent='Found: '+h.dataset.hazard;
    if(found===3){scores.shine=5;document.getElementById('hazardFeedback').textContent='All found. A clean workplace also means proper waste control and unobstructed access.';refreshScore();}
  }));
  document.getElementById('resetHazard').addEventListener('click',()=>{
-   found=0;scores.shine=0;document.querySelectorAll('.hazard').forEach(h=>h.classList.remove('found'));document.getElementById('hazardCounter').textContent='0 / 3 issues found';document.getElementById('hazardFeedback').textContent='';refreshScore();
+   found=0;scores.shine=0;document.querySelectorAll('.hazard').forEach(h=>{h.classList.remove('found');h.setAttribute('aria-pressed','false')});document.getElementById('hazardCounter').textContent='0 / 3 issues found';document.getElementById('hazardFeedback').textContent='';refreshScore();
  });
 
  // STANDARD + SUSTAIN
